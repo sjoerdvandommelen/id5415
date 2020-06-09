@@ -15,17 +15,12 @@
 <nav id="navigation">
   <h2>MENU</h2>
   <ul>
-    <!-- {% for link in site.links %}
-      <li><a href="{{ site.url }}{{site.baseurl}}{{ link.url }}">{{ link.title }}</a></li>
-    {% endfor %} -->
-    <!-- <li><a class="feed" href="{{ site.url }}{{site.baseurl}}/feed.xml" title="Atom/RSS feed">Feed</a></li> -->
-    <li><a href="{{site.baseurl}}/category/dcd">Data-Centric Design</a></li>
-    <li><a href="{{site.baseurl}}/category/material">Materials</a></li>
-    <li><a href="{{site.baseurl}}/category/ifonly">Tools</a></li>
-    <li><a href="{{site.baseurl}}/category/tutorial">Tutorials</a></li>
-    <li><a href="{{site.baseurl}}/category/event">Events</a></li>
-    <li><a href="{{site.baseurl}}/category/opportunity">Opportunities</a></li>
-    <li><a href="{{site.baseurl}}/category/education">Education</a></li>
+    <li><a href="{{site.baseurl}}/">Home</a></li>
+    {% for module in site.id5415 %}
+    {% if module.module-id != null %}
+    <li><a href="{{site.baseurl}}/module{{module.module-id}}">{{module.title}}</a></li>
+    {% endif %}
+    {% endfor %}
     <li><a href="{{site.baseurl}}/tags">Tags</a></li>
     <li><a href="{{site.baseurl}}/about">About</a></li>
   </ul>
