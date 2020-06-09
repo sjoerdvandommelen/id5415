@@ -12,15 +12,15 @@ code_management:
 computational_concepts: 
 ---
 
-Assignment 2 focuses on mapping the technologies of your connected product and setting sensors and actuators on your prototype.
-
-
 ---
 
 * Do not remove this line (it will not be displayed)
 {:toc}
 
 ---
+
+
+Assignment 2 focuses on mapping the technologies of your connected product and setting sensors and actuators on your prototype.
 
 
 # Step 1: Bluetooth

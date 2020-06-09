@@ -75,3 +75,16 @@ Now that you have a working prototype of connected lighting system, let's see wh
 
 ## Task 3.3: Python
 
+# Project
+
+lighting system: comfort, energy, communication, atmosphere, fitting activities
+
+* event/data driven
+* connectivity?
+* data processing
+
+
+Example:
+
+
+
