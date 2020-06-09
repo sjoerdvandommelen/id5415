@@ -21,3 +21,6 @@ Assignment 2 focuses on mapping the technologies of your connected product and s
 {:toc}
 
 ---
+
+
+# Step 1: Bluetooth
