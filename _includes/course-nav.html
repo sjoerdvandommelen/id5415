@@ -1,0 +1,23 @@
+
+    <div class="post-nav" style="margin-top: -50px">
+        <p>
+            {% if page.previous.url %}
+            <a href="{{page.previous.url}}" style="color:gray;text-decoration: none;">
+                <span class="mdi mdi-chevron-left"></span>{{page.previous.title}}<br>
+                <span style="font-size: small;padding-left:20px">
+                    {{page.previous.description}}
+                </span>
+            </a>
+            {% endif %}
+        </p>
+        <p>
+            {% if page.next.url %}
+            <a href="{{page.next.url}}" style="color:gray;text-decoration: none;">
+                {{page.next.title}}<span class="mdi mdi-chevron-right"></span><br>
+                <span style="font-size: small;padding-right:20px">
+                    {{page.next.description}}
+                </span>
+            </a>
+            {% endif %}
+        </p>
+    </div>

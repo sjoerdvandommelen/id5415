@@ -1,0 +1,50 @@
+# Site settings
+title: Prototyping Connected Products
+description: The full course material for the Master Elective id5415 from TU Delft / IDE.
+baseurl: ""
+url: "https://id5415.datacentricdesign.org"
+
+# User settings
+username: Jacky Bourgeois
+user_description:
+email: lab@datacentricdesign.org
+twitter_username: datacentricdesign
+github_username:  datacentricdesign
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: /:title/
+
+
+# html minify
+compress_html:
+  clippings: all
+  comments: all
+  endings: []
+  profile: false
+
+# Links to include in menu navigation
+# For external links add external: true
+links:
+  - title: Home
+    url: /
+  - title: Tags
+    url: /tags
+  - title: About
+    url: /about
+
+collections_dir: collections
+collections:
+  id5415:
+    output: true
+  staff_members:
+    output: true
+    people: true
+    sort_by: name
+
+# exclude my node related stuff
+exclude: ['package.json', 'package-lock.json', 'src', 'node_modules', 'scripts', 'draft', 'gulpfile.js', 'examples']
+
+kramdown:
+  toc_levels: 1..1

@@ -1,0 +1,16 @@
+<section class="author" itemprop="author">
+    <div class="details" itemscope itemtype="http://schema.org/Person">
+        {% for staff_member in site.staff_members %}
+        {% if staff_member.id == page.author %}
+        <img itemprop="image" class="img-rounded" src="{{ staff_member.img }}" style="max-width: 100px;" alt="{{site.name}}">
+        <p class="def">
+            Author
+        </p>
+        <h3 class="name">
+            <a itemprop="name" href="{{staff_member.link}}" style="font-size: medium;">{{staff_member.name}}</a>
+        </h3>
+        <p><a itemprop="email" class="email" href="mailto:{{staff_member.mail}}">{{staff_member.mail}}</a></p>
+         {% endif %}
+        {% endfor %}
+    </div>
+</section>

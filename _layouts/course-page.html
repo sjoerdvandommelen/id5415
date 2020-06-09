@@ -1,0 +1,29 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage" {% if page.main-class %}class="post-{{ page.main-class }}"{% endif %}>
+    {% include head.html %}
+    <body>
+        {% include svg-icons.html %}
+        {% include header-course.html %}
+        <section class="post">
+
+            <article id="post" class="post-content" role="main" itemprop="mainContentOfPage">
+
+                <p>
+                    {{ page.introduction }}
+                </p>
+
+                <div id="toc"></div>
+
+                {{ content }}
+            </article>
+
+            {% include course-nav.html %}
+
+            {% include footer.html %}
+        </section>
+    </body>
+</html>

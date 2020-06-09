@@ -1,0 +1,167 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage" {% if page.main-class %}class="post-{{ page.main-class }}"{% endif %}>
+{% include head.html %}
+<body>
+{% include svg-icons.html %}
+{% include header-course.html %}
+<section class="post">
+
+    <article id="intro-module" class="post-content" role="main" itemprop="mainContentOfPage">
+        <p>
+            {{page.introduction}}
+        </p>
+    
+        <p>
+            After this module, you should be able to:
+        </p>
+        
+        <div id="grid-learning-objectives" class="row flex-grid">
+            {% if page.explain != null %}
+            <article class="box-lo">
+                <div class="box-body">
+                    <div style="text-align: center;">
+                    <span class="mdi mdi-comment-text-outline"></span>
+                    </div>
+                    <p class="description">{{page.explain}}</p>
+                </div>
+            </article>
+            {% endif %}
+            {% if page.analyse != null %}
+            <article class="box-lo">
+                <div class="box-body">
+                    <div style="text-align: center;">
+                    <span class="mdi mdi-chart-bar"></span>
+                    </div>
+                    <p class="description">{{page.analyse}}</p>
+                </div>
+            </article>
+            {% endif %}
+            {% if page.make != null %}
+            <article class="box-lo">
+                <div class="box-body">
+                    <div style="text-align: center;">
+                    <span class="mdi mdi-hammer-wrench"></span>
+                    </div>
+                    <p class="description">{{page.make}}</p>
+                </div>
+            </article>
+            {% endif %}
+            {% if page.evaluate != null %}
+            <article class="box-lo">
+                <div class="box-body">
+                    <div style="text-align: center;">
+                    <span class="mdi mdi-test-tube"></span>
+                    </div>
+                    <p class="description">{{page.evaluate}}</p>
+                </div>
+            </article>
+            {% endif %}
+            {% if page.specify != null %}
+            <article class="box-lo">
+                <div class="box-body">
+                    <div style="text-align: center;">
+                        <span class="mdi mdi-pencil-ruler"></span>
+                    </div>
+                    <p class="description">{{page.specify}}</p>
+                </div>
+            </article>
+            {% endif %}
+            {% if page.collaborate != null %}
+            <article class="box-lo">
+                <div class="box-body">
+                    <div style="text-align: center;">
+                    <span class="mdi mdi-share-variant"></span>
+                    </div>
+                    <p class="description">{{page.collaborate}}</p>
+                </div>
+            </article>
+            {% endif %}
+        </div>
+
+        <h2><a href="/module{{page.module-id}}/self-study">
+            <span class="mdi mdi-bookshelf" style="margin-right: 10px;"></span>
+            Self-Study Material
+        </a></h2>
+
+        <h2><a href="/module{{page.module-id}}/assignment">
+            <span class="mdi mdi-code-json" style="margin-right: 10px;"></span>
+            Assignment
+        </a></h2>
+        {% for module in site[page.module-of] %}
+        {% assign moduleid = page.module-of | append: '-' | append: page.module-id %}
+        {% if module.assignment-of == moduleid %}
+        <p>
+            {{module.introduction}}
+        </p>
+            {% if module.prog_environment != null %}
+            <p>
+                <span class="mdi mdi-clipboard-play-outline" style="margin-right: 10px;"></span><b>Programming Environment:</b>
+                {{module.prog_environment}}
+            </p>
+            {% endif %}
+            {% if module.design != null %}
+            <p>
+                <span class="mdi mdi-pencil-ruler" style="margin-right: 10px;"></span><b>Design:</b>
+                {{module.design}}
+            </p>
+            {% endif %}
+            {% if module.code_management != null %}
+            <p>
+                <span class="mdi mdi-package-variant" style="margin-right: 10px;"></span><b>Code Management:</b>
+                {{module.code_management}}
+            </p>
+            {% endif %}
+            {% if module.computational_concept != null %}
+            <p>
+                <span class="mdi mdi-puzzle" style="margin-right: 10px;"></span><b>Computational Concept:</b>
+                {{module.computational_concept}}
+            </p>
+            {% endif %}
+        {% endif %}
+        {% endfor %}
+
+        <h2><a href="/module{{page.module-id}}/labxp">
+            <span class="mdi mdi-microscope" style="margin-right: 10px;"></span>
+            Lab Xp
+        </a></h2>
+        {% for module in site[page.module-of] %}
+        {% assign moduleid = page.module-of | append: '-' | append: page.module-id %}
+        {% if module.labxp-of == moduleid %}
+        <p>
+            {{module.introduction}}
+        </p>
+        {% if module.technique != null %}
+        <p>
+            <span class="mdi mdi-ab-testing" style="margin-right: 10px;"></span><b>Technique:</b>
+            {{module.technique}}
+        </p>
+        {% endif%}
+        {% if module.metrics != null %}
+        <p>
+            <span class="mdi mdi-tape-measure" style="margin-right: 10px;"></span><b>Metrics:</b>
+            {{module.metrics}}
+        </p>
+        {% endif%}
+        {% if module.report != null %}
+        <p>
+            <span class="mdi mdi-clipboard-text-outline" style="margin-right: 10px;"></span><b>Report:</b>
+            {{module.report}}
+        </p>
+        {% endif%}
+        {% endif %}
+        {% endfor %}
+
+
+        {{ content }}
+    </article>
+
+    {% include course-nav.html %}
+
+    {% include footer.html %}
+</section>
+</body>
+</html>

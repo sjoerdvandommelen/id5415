@@ -1,0 +1,31 @@
+---
+layout: minimal
+title: "About us"
+permalink: /about
+description: "Data-Centric Design Lab"
+---
+
+<h1>People</h1>
+
+{% for staff_member in site.staff_members %}
+<section class="author" itemprop="author">
+    <div class="details" itemscope itemtype="http://schema.org/Person">
+       <img itemprop="image" class="img-rounded" src="{{ staff_member.img }}" style="max-width: 200px;" alt="{{ staff_member.name }}">
+       <h3 class="name">
+           <a itemprop="name" href="{{ staff_member.link }}">{{ staff_member.name }}</a>
+        </h3>
+        <p class="desc">{{ staff_member.position }}<br/>{{ staff_member.content }}</p>
+        {% if staff_member.mail != null %}
+        <p><a itemprop="email" class="email" href="mailto:{{ staff_member.mail }}">{{ staff_member.mail }}</a></p>
+        {% endif %}
+        <!-- <p><a itemprop="github" class="github" href="https://github.com/{{site.github_username}}">github.com/{{site.github_username}}</a></p> -->
+    </div>
+</section>
+{% endfor %}
+
+<h1>Publications</h1>
+
+{% for publication in site.publications %}
+<p>[{{ publication.type }}] {{ publication.authors }}. {{ publication.title }}. {{ publication.venue }}. {{ publication.year }}</p>
+{% endfor %}
+

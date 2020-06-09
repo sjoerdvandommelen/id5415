@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1920 1080" style="enable-background:new 0 0 1920 1080;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#F2F2F2;}
+	.st1{fill:#3FA9F5;}
+	.st2{font-family:'Open Sans', 'sans serif';}
+	.st3{font-size:36px;}
+	.st4{font-size:48px;}
+	.st5{enable-background:new    ;}
+</style>
+<g>
+	<rect x="425" y="46" class="st0" width="347" height="458"/>
+</g>
+<g>
+	<rect x="425" y="544" class="st0" width="347" height="458"/>
+</g>
+<g>
+	<rect x="1149" y="46" class="st0" width="347" height="458"/>
+</g>
+<g>
+	<rect x="1149" y="544" class="st0" width="347" height="458"/>
+</g>
+<g>
+	<rect x="787" y="46" class="st0" width="347" height="458"/>
+</g>
+<g>
+	<rect x="787" y="544" class="st0" width="347" height="458"/>
+</g>
+<g>
+	<rect x="63" y="544" class="st1" width="347" height="458"/>
+</g>
+<g>
+	<rect x="1511" y="46" class="st1" width="347" height="458"/>
+</g>
+<g>
+	<rect x="1511" y="544" class="st1" width="347" height="458"/>
+</g>
+<g>
+	<rect x="63" y="289" class="st1" width="347" height="216"/>
+</g>
+<g>
+	<rect x="63" y="46" class="st1" width="347" height="216"/>
+</g>
+<text transform="matrix(1 0 0 1 168.2175 1034.0723)" class="st2 st3">Monday</text>
+<text transform="matrix(1 0 0 1 528.6973 1034.073)" class="st2 st3">Tuesday</text>
+<text transform="matrix(1 0 0 1 862.8624 1034.0713)" class="st2 st3">Wednesday</text>
+<text transform="matrix(1 0 0 1 1244.4005 1034.0718)" class="st2 st3">Thursday</text>
+<text transform="matrix(1 0 0 1 1633.1981 1034.0725)" class="st2 st3">Friday</text>
+<text transform="matrix(1 0 0 1 105.4726 772.9999)" class="st2 st4">Assignment</text>
+<text transform="matrix(1 0 0 1 1538.4255 274.9995)" class="st5"><tspan x="0" y="0" class="st2 st4">Assignment /</tspan><tspan x="64.8" y="57.6" class="st2 st4">Lab XP </tspan></text>
+<text transform="matrix(1 0 0 1 1609.4536 773)" class="st2 st4">Lab XP</text>
+<text transform="matrix(1 0 0 1 124.7614 139.1224)" class="st5"><tspan x="0" y="0" class="st2 st4">Self-Study</tspan><tspan x="19.5" y="57.6" class="st2 st4">Material</tspan></text>
+<text transform="matrix(1 0 0 1 118.4684 422.0319)" class="st2 st4">Live Demo</text>
+</svg>

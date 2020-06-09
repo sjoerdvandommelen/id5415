@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.1.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1920 1080" style="enable-background:new 0 0 1920 1080;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#3FA9F5;}
+	.st1{fill:#7DC4EF;}
+	.st2{font-family:'PTSans-NarrowBold';}
+	.st3{font-size:72px;}
+</style>
+<g>
+	<rect x="550.95" y="324.18" class="st0" width="347" height="216"/>
+</g>
+<g>
+	<rect x="550" y="582" class="st0" width="347" height="216"/>
+</g>
+<g>
+	<rect x="945" y="582" class="st0" width="347" height="216"/>
+</g>
+<g>
+	<rect x="945" y="324" class="st0" width="347" height="216"/>
+</g>
+<circle class="st1" cx="921" cy="559" r="127"/>
+<text transform="matrix(1 0 0 1 825.291 582.3638)" class="st2 st3">Explain</text>
+<text transform="matrix(1 0 0 1 654.8476 453.9536)" class="st2 st3">Make</text>
+<text transform="matrix(1 0 0 1 1018.6361 453.9535)" class="st2 st3">Analyse</text>
+<text transform="matrix(1 0 0 1 1008.7006 712.9534)" class="st2 st3">Evaluate</text>
+<text transform="matrix(1 0 0 1 632.8445 712.9536)" class="st2 st3">Specify</text>
+</svg>
