@@ -85,6 +85,14 @@ layout: compress
         <h2><a href="/module{{page.module-id}}/self-study">
             <span class="mdi mdi-bookshelf" style="margin-right: 10px;"></span>
             Self-Study Material
+            {% for module in site[page.module-of] %}
+            {% assign moduleid = page.module-of | append: '-' | append: page.module-id %}
+            {% if module.self-study-of == moduleid %}
+            <p>
+                {{module.introduction}}
+            </p>
+            {% endif %}
+            {% endfor %}
         </a></h2>
 
         <h2><a href="/module{{page.module-id}}/assignment">

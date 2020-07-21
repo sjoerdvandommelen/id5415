@@ -8,7 +8,7 @@ self-study-of: id5415-1
 tags:
 - prototyping
 - iot
-introduction: In this module, the self study material focus on Prototyping
+introduction: In this module, the self-study material focus on Prototyping and the Internet of Things' technology stack. We explore the purpose of a functional prototype, in close connection to feasibility testing. Then, we look at connected products, there main characteristics and why they often require a (partially) functional prototype. Finally, we introduce the concept of Internet of Things (IoT), the technology backbone of connected products.
 ---
 
 ---
@@ -28,17 +28,7 @@ introduction: In this module, the self study material focus on Prototyping
 * What's a connected product
 * Different architectures
 
-# IoT Technology Stack
+# Internet of Things' Technology Stack
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/kSxxUuC8njY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-# Version Control System
-
-* Git
-* GitHub
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/w3jLJU7DT5E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
-<iframe width="640px" height= "480px" src= "https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAANAASYlx1BUQ1FONlhLVUVTUzlOQlczOUFMR1pJQlVERy4u&embed=true" frameborder= "0" marginwidth= "0" marginheight= "0" style= "border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
 
