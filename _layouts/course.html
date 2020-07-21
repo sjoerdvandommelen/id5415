@@ -82,9 +82,6 @@
                     {% endif %}
                 </div>
 
-                <p>
-                    {{page.content}}
-                </p>
 
                 <div id="grid-modules" class="row flex-grid">
                     {% for module in site[page.course-id] %}
@@ -113,6 +110,10 @@
                     {% endif %}
                     {% endfor %}
                 </div>
+
+                <p>
+                    {{page.content}}
+                </p>
 
             </article>
 
