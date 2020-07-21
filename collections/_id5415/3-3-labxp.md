@@ -10,10 +10,6 @@ metrics:
 report:
 ---
 
-The tutorial 4 will lead you step-by-step to conduct a data campaign by collecting and labelling data.
-
-The tutorial 5 will lead you step-by-step through data analytics with Jupyter Notebook.
-
 
 ---
 

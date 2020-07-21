@@ -16,7 +16,8 @@ introduction: In this module, the self study material focus on
 
 ---
 
-# Sensors
 
+# Python
 
-# Network
+* What is Python
+* Why Python for this course

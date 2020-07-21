@@ -1,16 +1,16 @@
 ---
 layout: course-page
-title: "Reverse Engineering"
-permalink: /module1/labxp
-description: "Prototyping Connected Products - Lab Experiment 1"
-labxp-of: id5415-1
+title: "Lab XP 5"
+permalink: /module5/labxp
+description: "Prototyping Connected Products - Lab Experiment 5"
+labxp-of: id5415-5
 introduction: In this Lab Experiment,
 technique:
 metrics:
 report:
 ---
 
-
+Some intro
 
 ---
 
