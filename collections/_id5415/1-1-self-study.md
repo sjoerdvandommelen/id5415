@@ -23,7 +23,7 @@ introduction: In this module, the self-study material focus on Prototyping and t
 * What do we mean by prototype
 * What for?
 
-# Connected Product?
+# Connected Products
 
 * What's a connected product
 * Different architectures
@@ -31,3 +31,9 @@ introduction: In this module, the self-study material focus on Prototyping and t
 # Internet of Things' Technology Stack
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/kSxxUuC8njY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+# Documentating
+
+# Sandpit
+
+In this sand pit, we will demonstrate the basic functionality of the kit that you will use throughout the course. We will discuss functional prototyping, connected product and the IoT's Technology stack in this context.

@@ -33,3 +33,7 @@ introduction: In this module, the self-study material focus on the fundamentals 
 
 
 <iframe width="640px" height= "480px" src= "https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAANAASYlx1BUQ1FONlhLVUVTUzlOQlczOUFMR1pJQlVERy4u&embed=true" frameborder= "0" marginwidth= "0" marginheight= "0" style= "border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
+
+# Sand Pit
+
+In this sand pit, play with the basic programming concept in Python. We will walk you through the work flow of collaborating with Git and GitHub.

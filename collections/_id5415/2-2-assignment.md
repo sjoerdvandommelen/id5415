@@ -1,6 +1,6 @@
 ---
 layout: course-page
-title: "Assignment 2"
+title: "Shaping behavior with code"
 permalink: /module2/assignment
 description: "Prototyping Connected Product - Assignment 2"
 assignment-id: 2
@@ -53,3 +53,5 @@ Now that you have a working prototype of connected lighting system, let's see wh
 * Create a basic MyService that inherits from Service
 * Define a behaviour, a specific reaction of the light bulb based on a trigger
 * push changes
+
+# Step 3: 
