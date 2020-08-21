@@ -54,4 +54,4 @@ Now that you have a working prototype of connected lighting system, let's see wh
 * Define a behaviour, a specific reaction of the light bulb based on a trigger
 * push changes
 
-# Step 3: 
+# Step 3: Collect Data
