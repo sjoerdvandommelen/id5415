@@ -264,7 +264,7 @@ Little tour of the Raspberry Pi
 
 Why do we use another computer rather than our laptop? Throughout the course, you will also test your code on your machine. However, when prototyping connected products, you want them to be connected over time, especially for a homehub, and not depending on your laptop activity (e.g. closing the lead, moving out of the house). The Raspberry Pi can be permanently connected and serve its purpose. Besides, it also makes a device on which we can set up network access, enabling your laptop, your phone and other devices to interact with it.
 
-# Task 4.1: Installing the Image
+## Task 4.1: Installing the Image
 
 By now your Raspberry Pi image should be ready. Let's go back to Bucket and download it.
 
@@ -272,7 +272,7 @@ TODO intall image on sd card and power the Raspberry Pi with Etcher
 
 TODO look up the IP address of the Raspberry Pi on Bucket
 
-# Task 4.2: Connecting to the Raspberry Pi
+## Task 4.2: Connecting to the Raspberry Pi
 
 You can connect your Raspberry Pi to a screen, a keyboard and a mouse to use it as you would use your own computer. However, while prototyping your Raspberry Pi is often embbedded in your setting and knowing how to handle it remotly is an important skill to have.
 
