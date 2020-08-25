@@ -18,6 +18,8 @@ introduction: In this module, the self-study material focus on Prototyping and t
 
 ---
 
+TODO full self-study
+
 # Functional Prototyping
 
 * What do we mean by prototype
