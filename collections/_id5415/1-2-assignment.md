@@ -52,7 +52,9 @@ Screen shot
 
 Once you log into Bucket, the dashboard shows an empty page with a form to create a Thing.
 
-Following the phrasing of the Internet of Things, we've adopted this terminology to represent any physical or virtual entity that connect to the Internet and generate data.
+Following the phrasing of the Internet of Things, we've adopted this terminology to represent any physical or virtual entity that connect to the Internet and generate data. Thus, the 'Thing' that we create on Bucket is the 'digital twin' of the physical device, i.e. a virtual representation that contain data about the physical device.
+
+TODO drawing of the physiscal Thing and its digital twin on Bucket.
 
 Let's create a Thing for our Raspberry Pi, this little computer as part of the prototyping kit. Type in a name and a description, and select the type 'Raspberry Pi'.
 
@@ -159,10 +161,12 @@ Going back to the parent directory:
 cd ..
 ```
 
-Finall, the tild lead you to your home directory:
+Finally, the tild lead you to your home directory:
 ```bash
 cd ~
 ```
+
+To avoid typing the same command again and again,you can press the Arrow-Up key to bring back you previous commands.
 
 Read this [Bash cheat sheet](https://www.educative.io/blog/bash-shell-command-cheat-sheet) for some additional basic commands.
 
