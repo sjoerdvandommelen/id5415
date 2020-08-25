@@ -262,6 +262,10 @@ TODO screenshot result
 
 TODO a few command examples
 
+**What did we achieved?**
+
+* we are able to control the conected light bulb from our computer
+
 # Step 4: A Home Hub
 
 What is a Raspberry Pi, in contrast with an Arduino-like device? Here is a comparison, opposing a ['Microprocessor' and a 'microcontroller'](https://www.youtube.com/watch?v=7vhvnaWUZjE)
@@ -272,27 +276,56 @@ Why do we use another computer rather than our laptop? Throughout the course, yo
 
 ## Task 4.1: Installing the Image
 
-By now your Raspberry Pi image should be ready. Let's go back to Bucket and download it.
+By now your Raspberry Pi image should be ready. Let's go back to [Bucket](https://dwd.tudelft.nl/bucket), navigate to you Thing in the left. If the generation is complete, a blue download button appears. Press it to download the file.
 
-TODO intall image on sd card and power the Raspberry Pi with Etcher
+You receive a zip file. Unzip it to obtain an image file (extension .img)
 
-TODO look up the IP address of the Raspberry Pi on Bucket
+To install this image on the SD card, download and install Etcher: [Etcher](https://www.balena.io/etcher/)
+
+Starting Etcher, you first select your image file, then your SD card, and 'Flash'.
+
+Slide in the SD card intothe Raspberry Pi and power it with the USB micro charger. Avoid powering the Raspberry Pi with your laptop as it draws more power than your USB port are designed for.
+
+If you properly entered the details of your home network, your Raspberry Pi should automatically connect to this network. After a couple of minutes, refresh your Thing page on the Bucket web app. You should see the IP address of your Raspberry Pi at the top of the page. We will use the local IP address.
+
+TODO Screenshot Bucket with IP address
 
 ## Task 4.2: Connecting to the Raspberry Pi
 
 You can connect your Raspberry Pi to a screen, a keyboard and a mouse to use it as you would use your own computer. However, while prototyping your Raspberry Pi is often embbedded in your setting and knowing how to handle it remotly is an important skill to have.
 
-Throughout this course, we will thus access the Raspberry Pi remotly. For this we will use the ssh command as follows (replace user and hostname by the one you filled in on Bucket). Pressing enter, you will be prompt for your password.
+Throughout this course, we will thus access the Raspberry Pi remotly. For this we will use the ssh command as follows. Replace the square brackets with the username and hostname that you provisioned on Bucket. Pressing enter, you will be prompt for your password. The
 
 ```bash
-ssh username@hostname
+ssh [username]@[hostname]
 ```
+
+TODO Screenshot login ssh (including yes/no prompt for known host)
+
+Another way to connect to your Raspberry Pi, less convenient but often more reliable, is via its local IP Address (displayed on the Bucket web app). It is composed of 4 numbers separated by dots. 
 
 ```bash
-ssh userid@hostname
+ssh [username]@[your.local.IP.address]
 ```
-
 
 ## Task 4.3: Controlling the Light Bulb
 
-TODO interact with the lightbulb from the Pi:pipenv, install kasa-python,example commands
+As a final task for this assignment, let's replicate what you achieved on your laptop controlling the lightbulb.
+
+On the Raspberry Pi, let's create a test directory with the command 'mkdir' and navigate inside it with the command 'cd'.
+
+```bash
+mkdir test
+cd test
+```
+
+TODO pipenv, install kasa-python
+
+As we already connected the light bulb to the network, we can skip the network provisioning step. A few commands to control the light bulb:
+
+TODO example commands
+
+
+**What did we achieved?**
+
+* we have a Raspberry Pi up and running, connected to the same network as the lightbul and able to control it.
