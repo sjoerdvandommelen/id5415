@@ -34,6 +34,11 @@ introduction: In this module, the self-study material focus on Prototyping and t
 
 # Documentating
 
+
 # Sandpit
 
 In this sand pit, we will demonstrate the basic functionality of the kit that you will use throughout the course. We will discuss functional prototyping, connected product and the IoT's Technology stack in this context.
+
+# Coaching Session
+
+The first coaching session will be a matchmaking event. It will take place both on-campus and online

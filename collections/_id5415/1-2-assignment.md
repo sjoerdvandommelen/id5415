@@ -94,7 +94,7 @@ Create a folder on your computer to store the files for this course. Open VS Cod
 * The left panel relates to the management of your files with from the top: 1. the tree of your project files 2. searching into your project files 3. managing your file with Git. This is the whole menu of Module 2;
 * The bottom panel relates to the execution of code. We will especially look at the Terminal tab in the next task.
 
-TODO screen shot with arrows
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Sdg0ef2PpBw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Task 2.3: Basics of a Command-line Interpreter (CLI)
 

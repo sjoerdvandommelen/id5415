@@ -27,14 +27,10 @@ Now that you have a working prototype of connected lighting system, let's see wh
 
 ## Task 1.1: Git and GitHub
 
-* Setting Git on Mac/Windows
 * GitHub account and fork of Connected-Home
 
 ## Task 1.2: Visual Studio Code
 
-* Install VS Code
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Sdg0ef2PpBw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 * Retrieve code from the Git via VS Code
 * Exploring the IDE UI
