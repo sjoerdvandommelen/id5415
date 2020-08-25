@@ -20,6 +20,8 @@ computational_concepts: Data
 
 ---
 
+TODO To review
+
 # Step 1: A cloud
 
 We will see in module 5 the concepts of cloud and web services. For now, we will assume that we need something on the Internet that helps us collect and visualise data.

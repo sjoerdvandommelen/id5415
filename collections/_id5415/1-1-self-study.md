@@ -32,7 +32,7 @@ introduction: In this module, the self-study material focus on Prototyping and t
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/kSxxUuC8njY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-# Documentating
+# Documenting
 
 
 # Sandpit

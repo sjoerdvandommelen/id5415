@@ -16,6 +16,8 @@ introduction: In this module, the self study material focus on the main network 
 
 ---
 
+TODO Full self-study
+
 # Network Technologies
 
 

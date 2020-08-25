@@ -20,6 +20,9 @@ computational_concepts: I/O, files
 
 ---
 
+
+TODO full assignment
+
 # Step 1: GPIO and Sensors
 
 

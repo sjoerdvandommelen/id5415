@@ -16,6 +16,7 @@ introduction: In this module, the self-study material focus on the fundamentals 
 
 ---
 
+TODO Full self-study
 
 # Python
 

@@ -23,6 +23,8 @@ Assignment 4 focuses on
 
 ---
 
+TODO full assignment
+
 # Step 1: Scanning the WiFi Network
 
 

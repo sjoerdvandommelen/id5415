@@ -16,6 +16,8 @@ introduction: In this module, the self-study material focus on sensors and the d
 
 ---
 
+TODO Full self-study
+
 # Sensor
 
 
