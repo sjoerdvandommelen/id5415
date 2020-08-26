@@ -39,7 +39,7 @@ TODO full self-study
 
 # Sandpit
 
-In this sand pit, we will demonstrate the basic functionality of the kit that you will use throughout the course. We will discuss functional prototyping, connected product and the IoT's Technology stack in this context.
+In this sand pit, we will demonstrate the basic functionalities of the kit that you will use throughout the course. We will discuss functional prototyping, connected product and the IoT's Technology stack in this context.
 
 # Coaching Session
 

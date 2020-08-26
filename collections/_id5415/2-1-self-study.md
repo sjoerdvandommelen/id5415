@@ -52,7 +52,7 @@ This Why and What help us understand the relevance of Python in this course. To 
 
 # Sand Pit
 
-In this sand pit, play with the basic programming concept in Python. We will walk you through the work flow of collaborating with Git and GitHub.
+In this sand pit, we play with the basic programming concept in Python. We will walk you through the work flow of collaborating with Git and GitHub.
 
 # Coaching Session
 
