@@ -179,7 +179,7 @@ TODO screenshot
 
 Kill (little trash can icon) and reopen the terminal to load this environment. Notice the difference, the terminal statement start with (venv) and the Python environment is selected in the bottom panel.
 
-![Virtualenv](./assets/img/courses/id5415/module2/virtualenv.png)
+![Virtualenv](/assets/img/courses/id5415/module2/virtualenv.png)
 
 We can now install it 
 
