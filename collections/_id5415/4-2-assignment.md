@@ -27,8 +27,9 @@ TODO full assignment
 
 # Step 1: Scanning the WiFi Network
 
+detection of phone
 
-# Step 1 (Alt): Scanning Bluetooth
+detection of lightbulb
 
 
 # Step 2: Preprocessing data
