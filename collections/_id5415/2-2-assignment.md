@@ -95,7 +95,7 @@ Now each team member can explore Python in there own branch, committing new vers
 
 ## Task 2.1: Create a Python Script
 
-We write Python code into files with '.py' extension. Let's create a new file 'test.py' in the src folder.
+We write Python code into files with '.py' extension. Let's create a new file 'light.py' in the src folder.
 
 TODO screenshot right click on src, create new file
 
@@ -111,7 +111,7 @@ print("The light is on!")
 In the terminal, use the python command followed by the path to your file to execute your Python script:
 
 ```bash
-python src/test.py
+python src/light.py
 ```
 
 The sentence 'Turn on the light!' appear in the terminal.
@@ -122,35 +122,87 @@ The second line is a function call. The function 'print' displays a message in t
 
 # Step 3 Turn on the light! I mean for real!
 
-## Task 3.1 States
+In this step we will add a structure to our Python script and import the necessary libraries to control the light bulb.
 
-```python
-light_status = "on"
-print("The light is " + light_status + "!")
-light_status = "off"
-print("The light is " + light_status + "!")
+## Task 3.1 Main Function
+
+The main element of a Python program is its 'main' function. As we saw with print(), a function takes care of a task, such as showing a message on the Terminal. Let's introduct the main() function, which is a function you define as the starting point of you Python program.
+
+In the code below we added 'def main():'. This is the syntax to define the behaviour of a function. Notice that what is 'inside' this function is indented, i.e. moved to the right by one tab. This is how Python recognise that these lines are part of the function.
+
+```bash
+def main():
+    # This function 'print' the message 'The light is on!' in the Terminal
+    print("The light is on!")
 ```
 
-Let's create a function that handle the message
+In the terminal, execute your code again.
+
+```bash
+python src/light.py
+```
+
+What happened? Nothing! The text is no longer showing up, what is going on? Well, we defined a function main(), but we are not calling it. Like print(), to call our function with can write main() at the bottom of the file.
+
+```bash
+def main():
+    # This function 'print' the message 'The light is on!' in the Terminal
+    print("The light is on!")
+
+main()
+```
+
+Execute your code again. We now have our message back. We define main(), then we call it.
 
 ## Task 3.2 Libraries
+
+Our Python code is far from having the ability to talk to the light bulb yet. Fortunatelly we do not reinvent the wheel for every piece of code, we can use code written by others: these are called libraries. Add the following 2 lines at the top of your code.
 
 ```bash
 import asyncio
 from kasa import SmartBulb
+```
+
+This illustrates two ways of importing libraries into your program. The first statement 'import' **the entire** asyncio library. The second statement is **specifically selecting** the definition 'SmartBulb' from the library called 'kasa'.
+
+* 'asyncio' is part of Python (no need to install). By default, statements of our Python scripts are interpreted one after the other, waiting the previous one to be completed. This is a **synchronous** sequence of statements. However, to control the light bulb we need to send a message over the network, and wait for it to answer back. With synchronous statements, you would block the Python program till you receive this response. Asyncio gives us the ability to execute statements in an **asynchronous** way, meaning that we can send our message to the lightbulb, do something else, then come back where we left when we receive a response from the light bulb.
+
+* 'kasa' is the library that we used in the previous module to control the light bulb. To ensure that we install this library for our project without disturbing any other Python settings, we setup a virtual environment that we call 'venv'. To do so, enter the following command in the terminal.
+
+```bash
+virtualenv venv
+```
+
+VS Code recognise the creation of this new environment and ask you if you want to switch, click 'Yes'.
+
+TODO screenshot 
+
+Kill (little trash can icon) and reopen the terminal to load this environment. Notice the difference, the terminal statement start with (venv) and the Python environment is selected in the bottom panel.
+
+![Virtualenv](assets/img/courses/id5415/module2/virtualenv.png)
+
+We can now install it 
+
+```bash
+pip install python-kasa --pre
+```
+
+
 
 async def main():
-    p = SmartBulb("10.0.1.3")
+    bulb = SmartBulb("10.0.1.3")
 
-    await p.update()
-    print(p.alias)
+    result = await bulb.turn_on()
 
-    await p.turn_on()
+    print(result)
 
+    print("The light is " + light_status + "!")
 
 if __name__ == "__main__":
     asyncio.run(main())
 ```
+
+**Commit and Push!** You've wrote a new piece of code, let's make sure that Git keeps a version of it. To do so, repeat [Task 1.3](#task-13-stage-and-commit-changes) and [Task 1.4](#task-14-stage-and-commit-changes). Your commit message could be 'controlling the light bulb'
 
 # Step 4 Control flow
 
@@ -159,3 +211,5 @@ if __name__ == "__main__":
 
 ## Task 4.2 Loops
 
+
+**Commit and Push!** You've wrote a new piece of code, let's make sure that Git keeps a version of it. To do so, repeat [Task 1.3](#task-13-stage-and-commit-changes) and [Task 1.4](#task-14-stage-and-commit-changes). Your commit message could be 'shaping the light bulb behaviour'
