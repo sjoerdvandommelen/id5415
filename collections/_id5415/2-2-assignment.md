@@ -95,11 +95,11 @@ Now each team member can explore Python in there own branch, committing new vers
 
 ## Task 2.1: Create a Python Script
 
-We write Python code into files with '.py' extension. Let's create a new file 'light.py' in the src folder.
+We write Python code into files with `.py` extension. Let's create a new file `light.py` in the src directory.
 
 TODO screenshot right click on src, create new file
 
-Paste the following lines in the test.py
+Paste the following lines in the file light.py
 
 ```python
 # This function 'print' the message 'The light is on!' in the Terminal
@@ -114,11 +114,21 @@ In the terminal, use the python command followed by the path to your file to exe
 python src/light.py
 ```
 
-The sentence 'Turn on the light!' appear in the terminal.
+The sentence `Turn on the light!` appear in the terminal.
 
-What is happening? The first line (appearing in green) starts with a hash #. It is a comment and is ignored by the Python interpreter. Do not hesitate to use comment extensively to remember the purpose of a piece of code.
+What is happening? The first line (appearing in green) starts with a hash `#`. It is a comment and is ignored by the Python interpreter. Do not hesitate to use comment extensively to remember the purpose of a piece of code.
 
-The second line is a function call. The function 'print' displays a message in the terminal. It takes 1 argument, the message to display).
+The second line is a function call. The function `print()` displays a message in the terminal. It takes 1 argument, the message to display).
+
+# Task 2.3: Variables and Types
+
+In the previous we wrote the minimal code enabling the control of the light bulb from Python. In this code, you can see the names `bulb` and `result`. These are the names of 2 variables. A variable is a storage location attached to a name. In a program, it enables us to store information (or value), so that we can use it further on in the program.
+
+```
+
+```
+
+## Task 
 
 # Step 3 Turn on the light! I mean for real!
 
@@ -126,9 +136,9 @@ In this step we will add a structure to our Python script and import the necessa
 
 ## Task 3.1 Main Function
 
-The main element of a Python program is its 'main' function. As we saw with print(), a function takes care of a task, such as showing a message on the Terminal. Let's introduct the main() function, which is a function you define as the starting point of you Python program.
+The main element of a Python program is its 'main' function. As we saw with print(), a function takes care of a task, such as showing a message on the Terminal. Let's introduce the `main()` function, which is a function you define as the starting point of you Python program.
 
-In the code below we added 'def main():'. This is the syntax to define the behaviour of a function. Notice that what is 'inside' this function is indented, i.e. moved to the right by one tab. This is how Python recognise that these lines are part of the function.
+In the code below we added `def main():`. This is the syntax to **define** the behaviour of a **function**. Notice that what is 'inside' this function is indented, i.e. moved to the right by one tab. This is how Python recognise that these lines are part of the function.
 
 ```bash
 def main():
@@ -136,13 +146,9 @@ def main():
     print("The light is on!")
 ```
 
-In the terminal, execute your code again.
+In the terminal, execute your code again (`python src/light.py`)
 
-```bash
-python src/light.py
-```
-
-What happened? Nothing! The text is no longer showing up, what is going on? Well, we defined a function main(), but we are not calling it. Like print(), to call our function with can write main() at the bottom of the file.
+What happened? Nothing! The text is no longer showing up, what is going on? Well, we defined a function `main()`, but we are not calling it. Like `print()`, to call our function we can write `main()` at the bottom of the file.
 
 ```bash
 def main():
@@ -152,20 +158,20 @@ def main():
 main()
 ```
 
-Execute your code again. We now have our message back. We define main(), then we call it.
+Execute your code again. We now have our message back. First, we define `main()`, then we call it ().
 
 ## Task 3.2 Libraries
 
-Our Python code is far from having the ability to talk to the light bulb yet. Fortunatelly we do not reinvent the wheel for every piece of code, we can use code written by others: these are called libraries. Add the following 2 lines at the top of your code.
+Our Python code is far from having the ability to talk to the light bulb yet. Fortunatelly we do not reinvent the wheel for every piece of code. We can reuse code written by others: these are called libraries. Add the following 2 lines at the top of your code.
 
-```bash
+```python
 import asyncio
 from kasa import SmartBulb
 ```
 
-This illustrates two ways of importing libraries into your program. The first statement 'import' **the entire** asyncio library. The second statement is **specifically selecting** the definition 'SmartBulb' from the library called 'kasa'.
+This illustrates two ways of importing libraries into your program. The first statement `import ...` import **the entire** asyncio library. The second statement `from ... import ...` is **specifically selecting** the definition `SmartBulb` from the library called `kasa`.
 
-* 'asyncio' is part of Python (no need to install). By default, statements of our Python scripts are interpreted one after the other, waiting the previous one to be completed. This is a **synchronous** sequence of statements. However, to control the light bulb we need to send a message over the network, and wait for it to answer back. With synchronous statements, you would block the Python program till you receive this response. Asyncio gives us the ability to execute statements in an **asynchronous** way, meaning that we can send our message to the lightbulb, do something else, then come back where we left when we receive a response from the light bulb.
+* 'asyncio' is part of Python (no need to install it). By default, statements of our Python scripts are interpreted one after the other, waiting the previous one to be completed. This is a **synchronous** sequence of statements. However, to control the light bulb we need to send a message over the network, and wait for it to answer back. With synchronous statements, you would block the Python program till you receive this response. Asyncio gives us the ability to execute statements in an **asynchronous** way, meaning that we can send our message to the light bulb, do something else, then come back where we left when we receive a response from the light bulb.
 
 * 'kasa' is the library that we used in the previous module to control the light bulb. To ensure that we install this library for our project without disturbing any other Python settings, we setup a virtual environment that we call 'venv'. To do so, enter the following command in the terminal.
 
@@ -173,36 +179,71 @@ This illustrates two ways of importing libraries into your program. The first st
 virtualenv venv
 ```
 
-VS Code recognise the creation of this new environment and ask you if you want to switch, click 'Yes'.
+VS Code recognises the creation of this new environment and ask you if you want to switch, click 'Yes'.
 
 TODO screenshot 
 
-Kill (little trash can icon) and reopen the terminal to load this environment. Notice the difference, the terminal statement start with (venv) and the Python environment is selected in the bottom panel.
+Kill the Terminal (little trashcan icon) and open a new Terminal to load this new environment. Notice the difference, the Terminal statement start with `(venv)` and the Python environment is selected in the bottom panel.
 
 ![Virtualenv](/assets/img/courses/id5415/module2/virtualenv.png)
 
-We can now install it 
+We can now install the kasa library
 
 ```bash
 pip install python-kasa --pre
 ```
 
+Like we did in the previous assignment, we can use `kasa discover` to find the IP address of our light bulb on the network.
 
+![Kasa Discover](/assets/img/courses/id5415/module2/kasa-discover.png)
 
+Look up the `host` line of the result for the IP address.
+
+Let's transform our `main()` to be asynchronous.
+
+```python
+# Import libraries
+import asyncio
+from kasa import SmartBulb
+# 'async' transform our main() into an asynchronous function
 async def main():
+    # Call the definition of a light bulb, replace the IP address with the one found with kasa discover
     bulb = SmartBulb("10.0.1.3")
-
+    # 'await' tells the program to wait till getting a result from the light bulb
     result = await bulb.turn_on()
-
+    # Once we receive it, we call print() to show the result in the Terminal
     print(result)
 
-    print("The light is " + light_status + "!")
-
-if __name__ == "__main__":
-    asyncio.run(main())
+# We call main() in the asynchronous environment 
+asyncio.run(main())
 ```
 
+The transformation of your code looks like this:
+
+![Code transformation](/assets/img/courses/id5415/module2/code-transformation.png)
+
+Let's run this code! The light should turn on and the Terminal shoul look like that:
+
+![Turn On](/assets/img/courses/id5415/module2/turn-on.png)
+
+## Task 3.4 Analysing the Result
+
+What do we see? A `JSON` structure which is a typical way to exchange data on the Internet of Things. It starts and ends with curly brackets `{}`. It is composed of `"key": "value"` sets separated by a comma `,`. A value can be any of the primitive types `string`, `float`, `integer` or  `boolean` covered in the previous step. It can also be a JSON structure itself with curly brackets `{}` or an array of any of those types, delimited with square brackets `[]`.
+
+```json
+{
+    "key": "value",
+    "key2": ["array", "of", "values"],
+    "key3": {
+        "subkey": "value"
+    }
+}
+```
+
+In our example, you can recognise the key 'on_off', an `integer` with value `1`
+
 **Commit and Push!** You've wrote a new piece of code, let's make sure that Git keeps a version of it. To do so, repeat [Task 1.3](#task-13-stage-and-commit-changes) and [Task 1.4](#task-14-stage-and-commit-changes). Your commit message could be 'controlling the light bulb'
+
 
 # Step 4 Control flow
 
