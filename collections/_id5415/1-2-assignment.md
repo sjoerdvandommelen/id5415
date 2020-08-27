@@ -37,14 +37,11 @@ Throughout the course, we will rely on these tools to collect and visualise data
 
 ## Task 1.1 Create a DCD Lab account
 
-* connect to Bucket: [https://dwd.tudelft.nl/bucket](https://dwd.tudelft.nl/bucket)
+To create your DCD Lab account, go to [Bucket](https://dwd.tudelft.nl/bucket) and click the blue button sign In / Sign Up. Similar to your TU Delft account, all our tools are accessible via a single account from our Lab.
 
-- Sign in / Sign Up, OAuth2?
-
-Similar to your TU Delft account, all our tools are accessible via a single account from our Lab.
-
-Sign up:
 ![Sign Up Screen](/assets/img/courses/id5415/module1/1_1.png)
+
+You land on the dashboard of Bucket.
 
 ## Task 1.2 Create a Raspberry Pi Thing
 
