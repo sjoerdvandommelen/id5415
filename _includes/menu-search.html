@@ -20,15 +20,6 @@
     {% if module.module-id != null %}
     <li><a href="{{site.baseurl}}/module{{module.module-id}}">{{module.title}}</a></li>
     {% endif %}
-    {% if module.self-study-of != null %}
-    <li><a href="{{site.baseurl}}/module{{module.module-id}}/self-study">&nbsp;&nbsp;&#8594;Self-study</a></li>
-    {% endif %}
-    {% if module.assignment-of != null %}
-    <li><a href="{{site.baseurl}}/module{{module.module-id}}/assignment">&nbsp;&nbsp;&#8594;Assignment</a></li>
-    {% endif %}
-    {% if module.labxp-of != null %}
-    <li><a href="{{site.baseurl}}/module{{module.module-id}}/labxp">&nbsp;&nbsp;&#8594;Lab XP</a></li>
-    {% endif %}
     {% endfor %}
     <li><a href="{{site.baseurl}}/tags">Tags</a></li>
     <li><a href="{{site.baseurl}}/about">Teaching Team</a></li>
