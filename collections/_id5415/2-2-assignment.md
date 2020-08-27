@@ -72,7 +72,7 @@ Clicking on this button triggers three action:
 
 If the merge does not succeed automatically, it prompt you to let you choose, for each conflicting block of code, which one to keep (your's, your teammate's or both).
 
-## Task 1.5: Create a Branch
+## Task 1.5 Create a Branch
 
 As every team member start making large contribution to the repository, we can quickly see how merging can get complicated. To minimise this challenge, we suggest the combination of 2 strategies:
 
@@ -89,11 +89,11 @@ TODO screenshot selection master
 
 A more complete tutorial on branches is available by [Atlassian](https://www.atlassian.com/git/tutorials/using-branches).
 
-# Step 2: Turn on the light!
+# Step 2 Turn on the light!
 
 Now each team member can explore Python in there own branch, committing new versions of their code without conflict.
 
-## Task 2.1: Create a Python Script
+## Task 2.1 Create a Python Script
 
 We write Python code into files with `.py` extension. Let's create a new file `light.py` in the src directory.
 
@@ -120,7 +120,7 @@ What is happening? The first line (appearing in green) starts with a hash `#`. I
 
 The second line is a function call. The function `print()` displays a message in the terminal. It takes 1 argument, the message to display).
 
-# Task 2.3: Variables and Types
+# Task 2.3 Variables and Types
 
 In the previous we wrote the minimal code enabling the control of the light bulb from Python. In this code, you can see the names `bulb` and `result`. These are the names of 2 variables. A variable is a storage location attached to a name. In a program, it enables us to store information (or value), so that we can use it further on in the program.
 
@@ -228,7 +228,7 @@ Let's run this code! The light should turn on and the Terminal shoul look like t
 
 ## Task 3.4 Analysing the Result
 
-What do we see? A `JSON` structure which is a typical way to exchange data on the Internet of Things. It starts and ends with curly brackets `{}`. It is composed of `"key": "value"` sets separated by a comma `,`. A value can be any of the primitive types `string`, `float`, `integer` or  `boolean` covered in the previous step. It can also be a JSON structure itself with curly brackets `{}` or an array of any of those types, delimited with square brackets `[]`.
+What do we see? A `JSON` structure which is a typical way to exchange data on the Internet of Things. It starts and ends with curly brackets `{}`. It is composed of `"key": "value"` sets separated by a comma `,`. A value can be any of the primitive types `string`, `float`, `integer` or  `boolean` covered in the previous [Step](#task-23-variables-and-Types). It can also be a JSON structure itself with curly brackets `{}` or an array of any of those types, delimited with square brackets `[]`.
 
 ```json
 {
@@ -240,17 +240,26 @@ What do we see? A `JSON` structure which is a typical way to exchange data on th
 }
 ```
 
-In our example, you can recognise the key 'on_off', an `integer` with value `1`
+In our example, you can recognise the key 'on_off', an `integer` with value `1`: The light is on.
 
 **Commit and Push!** You've wrote a new piece of code, let's make sure that Git keeps a version of it. To do so, repeat [Task 1.3](#task-13-stage-and-commit-changes) and [Task 1.4](#task-14-stage-and-commit-changes). Your commit message could be 'controlling the light bulb'
 
 
 # Step 4 Control flow
 
-## Task 4.1 Condition
+# Step 4.1 Objects
 
 
-## Task 4.2 Loops
+## Task 4.2 Condition
+
+
+## Task 4.3 Loops
 
 
 **Commit and Push!** You've wrote a new piece of code, let's make sure that Git keeps a version of it. To do so, repeat [Task 1.3](#task-13-stage-and-commit-changes) and [Task 1.4](#task-14-stage-and-commit-changes). Your commit message could be 'shaping the light bulb behaviour'
+
+
+
+**CHANGELOG** In this assignment you have made significant addition to your prototype. Edit the file `CHANGELOG.md`
+
+**IssueG** In this assignment you have made significant addition to your prototype. Edit the file `CHANGELOG.md`

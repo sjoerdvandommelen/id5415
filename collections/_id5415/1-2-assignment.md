@@ -5,7 +5,7 @@ permalink: /module1/assignment
 description: 'Prototyping Connected Product - Assignment 1'
 assignment-id: 1
 assignment-of: id5415-1
-introduction: Assignments is where the prototyping happens. In this firstassignment, you will set up a Raspberry Pi as a connected home hub to control connected light bulbs. We will walk you through the different steps while exploring the purpose of each component, incrementally drawing an product architecture.
+introduction: Assignments is where the prototyping happens. In this first assignment, you will set up a Raspberry Pi as a connected home hub to control connected light bulbs. We will walk you through the steps while exploring the purpose of each component, incrementally drawing an product architecture.
 prog_environment: Raspberry Pi
 design: Architecture
 code_management: Logs
@@ -31,13 +31,13 @@ In this course, we will rely on a set of tools that we developed at IDE to keep 
 
 Here is a little tour:
 
-TODO Video tour Bucket
+<iframe width="560" height="315" src="https://www.youtube.com/embed/H2Ogmi1J-P8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Throughout the course, we will rely on these tools to collect and visualise data, but also to check the status of our 'Things' on the Internet.
 
 ## Task 1.1 Create a DCD Lab account
 
-- connect to Bucket: https://dwd.tudelft.nl/bucket
+* connect to Bucket: [https://dwd.tudelft.nl/bucket](https://dwd.tudelft.nl/bucket)
 
 - Sign in / Sign Up, OAuth2?
 

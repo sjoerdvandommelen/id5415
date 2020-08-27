@@ -4,7 +4,7 @@ title: "Reverse Engineering"
 permalink: /module1/labxp
 description: "Prototyping Connected Products - Lab Experiment 1"
 labxp-of: id5415-1
-introduction: Lab experiment is the term we use in this course for making using of the prototype through test and analysis. In this Lab Experiment, we will explore the  data that is automatically generated from your Raspberry Pi. We will have a first taste of data exploration and use these insights to infer how the system works.
+introduction: Lab experiment is the term we use in this course for making use of the prototype through test and analysis. In this Lab experiment, we will explore the  data that is automatically generated from your Raspberry Pi. We will have a first taste of data exploration and use these insights to infer how the system works.
 technique: Data Exploration, Reverse Engineering
 metrics:
 report: System Architecture, System Data Visualisation

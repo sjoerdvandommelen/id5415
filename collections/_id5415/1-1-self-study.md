@@ -8,7 +8,7 @@ self-study-of: id5415-1
 tags:
 - prototyping
 - iot
-introduction: In this module, the self-study material focus on Prototyping and the Internet of Things' technology stack. We explore the purpose of a functional prototype, in close connection to feasibility testing. Then, we look at connected products, there main characteristics and why they often require a (partially) functional prototype. Finally, we introduce the concept of Internet of Things (IoT), the technology backbone of connected products.
+introduction: In this module, the self-study material focus on Prototyping and the Internet of Things' technology stack. We explore the purpose of a functional prototype, in close connection to feasibility testing. Then, we look at connected products, their main characteristics and why they often require a (partially) functional prototype. Finally, we introduce the concept of Internet of Things (IoT), the technology backbone of connected products.
 ---
 
 ---
