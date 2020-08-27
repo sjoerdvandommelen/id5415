@@ -1,8 +1,8 @@
 ---
 layout: course-page
-title: "Assignment 1"
+title: 'Assignment 1'
 permalink: /module1/assignment
-description: "Prototyping Connected Product - Assignment 1"
+description: 'Prototyping Connected Product - Assignment 1'
 assignment-id: 1
 assignment-of: id5415-1
 introduction: Assignments is where the prototyping happens. In this firstassignment, you will set up a Raspberry Pi as a connected home hub to control connected light bulbs. We will walk you through the different steps while exploring the purpose of each component, incrementally drawing an product architecture.
@@ -12,11 +12,10 @@ code_management: Logs
 computational_concepts: Data
 ---
 
-
 ---
 
-* Do not remove this line (it will not be displayed)
-{:toc}
+- Do not remove this line (it will not be displayed)
+  {:toc}
 
 ---
 
@@ -38,15 +37,14 @@ Throughout the course, we will rely on these tools to collect and visualise data
 
 ## Task 1.1 Create a DCD Lab account
 
-* connect to Bucket: https://dwd.tudelft.nl/bucket
+- connect to Bucket: https://dwd.tudelft.nl/bucket
 
-* Sign in / Sign Up, OAuth2? 
+- Sign in / Sign Up, OAuth2?
 
 Similar to your TU Delft account, all our tools are accessible via a single account from our Lab.
 
-Sign up
-
-Screen shot
+Sign up:
+![Sign Up Screen](/assets/img/courses/id5415/module1/1_1.png)
 
 ## Task 1.2 Create a Raspberry Pi Thing
 
@@ -58,28 +56,28 @@ TODO drawing of the physiscal Thing and its digital twin on Bucket.
 
 Let's create a Thing for our Raspberry Pi, this little computer as part of the prototyping kit. Type in a name and a description, and select the type 'Raspberry Pi'.
 
-Screenshot
+![Create Thing with Wifi Credentials that connects to the internet](../../assets/img/courses/id5415/module1/1_2_2.png)
 
-Many input fields appear. As setting up a Raspberry Pi in a proper way can be cumbersome, Bucket will use this information to prepare a secured image for you ready to use.
+Many input fields appear. As setting up a Raspberry Pi in a proper way can be cumbersome, Bucket will use this information to prepare a secured disk image for you ready to use. You can burn this disk image in memory stick and plug it into Raspberry Pi with all necessary configuration to start working.
 
-Let's walk through these input fields and their purpose. Keep in mind that we do not store any of this information. We blend it into a Raspberry Pi image that only you, owner of the Thing you are creating, can download through a secured connection. 
+Let's walk through these input fields and their purpose. Keep in mind that **we do not store any of this information. We blend it into a Raspberry Pi image that only you, owner of the Thing you are creating, can download through a secured connection**.
 
 The first section is about restricting the access to your Raspberry Pi. As you will store network information on your Raspberry Pi, it is essential to set it up in a way that prevent others to access it.
 
 The second section is about connecting to the network. Eduroam is an enterprise grade network which requires several challenging intervention on the Raspberry Pi system. Filling in your NetId and password, we make sure that your Raspberry Pi can automatically connect to Eduroam and manage your credential properly. We conveniently provide a similar function for your home network.
 
-Once you are down, click 'Create'. The page should update with your newly created Thing. However, it will take a 'long' time to generate your image. You can see a status indicator which will turn into a 'Download' button when your image is ready.
+Once you have filled in all the informtion in section 1 and 2, click 'Create' button. The page should update with your newly created Thing. However, it will take a 'long' time to generate your image. You can see a status indicator which will turn into a 'Download' button when your image is ready.
 
 You can proceed to the next step while waiting for your Raspberry Pi image to be ready.
 
-**What did we achieved?** 
+**What did we achieved?**
 
-* We have a cloud account enabling us to manage the data of our prototype. 
-* We launch the generation of a ready-to-use system for the Raspberry Pi.
+- We have a cloud account enabling us to manage(create/read/update) the data of our prototype (Section 1).
+- We launch the generation of a ready-to-use system for the Raspberry Pi (Section 2).
 
 # Step 2: Four Key Development Tools
 
-No worry, we will not start coding before the next module! However, we need a several tools in order to interact with the connected light bulb of the prototyping kit. Let's take this opportunity to introduce and install the tools we will use throughout the course.
+Before we start coding in our next moudle, we need a several tools in order to interact with the connected light bulb of the prototyping kit. Let's take this opportunity to introduce and install the tools we will use throughout the course.
 
 ## Task 2.1: Installing a Version Control System (VCS)
 
@@ -93,16 +91,16 @@ The next step is editing and executing code. Developers do this in an Integrated
 
 Download and install VS Code from the [official website](https://code.visualstudio.com/).
 
-Create a folder on your computer to store the files for this course. Open VS Code and click the top menu File > Open ... to open your your course folder. Let's take a little tour of the IDE.
+Create a folder on your computer (i.e Desktop) to store the files for this course. Open VS Code and click the top menu File > Open ... to open your your course folder. Let's take a little tour of the IDE.
 
-* The left panel relates to the management of your files with from the top: 1. the tree of your project files 2. searching into your project files 3. managing your file with Git. This is the whole menu of Module 2;
-* The bottom panel relates to the execution of code. We will especially look at the Terminal tab in the next task.
-
+- The left panel relates to the management of your files with from the top: 1. the tree of your project files 2. searching into your project files 3. managing your file with Git. This is the whole menu of Module 2;
+- The bottom panel relates to the execution of code. We will especially look at the Terminal tab in the next task.
+![Tour to VS Code](../../assets/img/courses/id5415/module1/2_2.png)
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Sdg0ef2PpBw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Task 2.3: Basics of a Command-line Interpreter (CLI)
 
-A Command-Line Interpreter or CLI is no tool for one project but rather for your entire digital prototyping life! In the software jargon, you will hear about 'Unix shell', 'Console', 'Terminal' or 'Command Prompt'. Whether it is the software itself or the language that it relies on, all of them refer to this black window full of scary lines. You write text, press enter, and it interpretes this text as a command (e.g. create a directory, open an application). Why would we use this primitive text-based interaction instead of clicking on graphical buttons (so called 'Graphical User Interface' or GUI)? When prototyping you are developing technologies and playing with cutting edge ones, mainy of which simply do not have GUIs. 
+A Command-Line Interpreter (CLI) is no tool for one project but rather for your entire digital prototyping life! In the software jargon, it is known as: 'Unix shell', 'Console', 'Terminal' or 'Command Prompt'. Whether it is the software itself or the language that it relies on, all of them refer to this black window with full of scary lines. You write text, press enter, and it interpretes this text as a command (e.g. create a directory, open an application). Why would we use this primitive text-based interaction instead of clicking on graphical buttons (so called 'Graphical User Interface' or GUI)? When prototyping you are developing technologies and playing with cutting edge ones, mainly of which simply do not have GUIs.
 
 ### Task 2.3.1 Setting up in VS Code
 
@@ -110,13 +108,13 @@ To find the Terminal in VS Code, go to View > Terminal. It opens a tab in the bo
 
 On Windows, the installation of Git should have install bash, **you must select bash instead of Power Shell.**
 
-TODO screen shot with arrows
+![Introduction to VSCode Terminal](../../assets/img/courses/id5415/module1/2_3_1.png)
 
 Each command line start with your username @ your machine name. Then, the current folder is shown
 
 ### Task 2.3.2 Basic commands
 
-To execute a command simply type it, and press the ENTER key. Let's MaKe a DIRectory named 'test' with the command 'mkdir':
+To execute a command simply type it, and press the ENTER key. Let's MaKe a Directory(Folder) named 'test' with the command 'mkdir':
 
 ```bash
 mkdir test
@@ -128,9 +126,9 @@ The new folder should appear in your file tree in the left panel. 'ls' is the co
 ls
 ```
 
-Your test folder should appear as a result of this command.
+Your test folder should appear as a result of this command as shown below.
 
-TODO screenshot ls result
+![](../../assets/img/courses/id5415/module1/2_3_2_1.png)
 
 Most commands come with a manual, available with the command 'man'. Let's explore the option of the ls command.
 
@@ -138,7 +136,7 @@ Most commands come with a manual, available with the command 'man'. Let's explor
 man ls
 ```
 
-TODO screenshot man
+![](../../assets/img/courses/id5415/module1/2_3_2_2.png)
 
 You can see a long list of option, starting with a dash '-'. These options can be combined together. For instance you will note -G for coloring the result and -l for the long and detailed result. To quit the manual, press 'q'. Now we can try:
 
@@ -146,7 +144,7 @@ You can see a long list of option, starting with a dash '-'. These options can b
 ls -Gl
 ```
 
-TODO screenshot
+![](../../assets/img/courses/id5415/module1/2_3_2_3.png)
 
 In the terminal, everything relates to where you are in the file tree, i.e. in which folder you are in. With the command 'cd' you can 'change directory' to navigate this tree. The 'path' is the chain of directories to reach your targeted file or directory.
 
@@ -154,23 +152,31 @@ In the terminal, everything relates to where you are in the file tree, i.e. in w
 cd test
 ```
 
+![](../../assets/img/courses/id5415/module1/2_3_2_4.png)
+
 You entered 'test' folder, you can notice the command line is now showing 'test' as the current folder. There are three important path markers: dot '.' for the current directory, dot dot '..' for the parent directory, and tild '~' for the home directory.
 
 Going back to the parent directory:
+
 ```bash
 cd ..
 ```
 
+![](../../assets/img/courses/id5415/module1/2_3_2_5.png)
+
 Finally, the tild lead you to your home directory:
+
 ```bash
 cd ~
 ```
+
+![](../../assets/img/courses/id5415/module1/2_3_2_6.png)
 
 To avoid typing the same command again and again,you can press the Arrow-Up key to bring back you previous commands.
 
 Read this [Bash cheat sheet](https://www.educative.io/blog/bash-shell-command-cheat-sheet) for some additional basic commands.
 
-## Task 2.4: Installing a Programming Language
+## Task 2.4: Installing a Python Programming Language
 
 The last tool we need is Python, the programming language for this course.
 
@@ -186,11 +192,27 @@ python --version
 
 This command should return a version number of Python 3.x.x.
 
-TODO install and describe the purpose of pipenv
+## Task 2.5: Setting up Virtual Environment to work
+
+A virtual environment is a self-contained directory tree that contains a Python installation for a particular version of Python, plus a number of additional packages (modules) to meet the requirements of each python application we are developing. Different python application can use different virtual environments.
+
+To create a virtual environment, Go to VSCode and open the terminal. Type below command to create a virtual environment called "venv".
+
+```bash
+virtualenv venv
+```
+
+VS Code recognises the creation of this new environment and ask you if you want to switch(Bottom right corner of the screen), click 'Yes'.
+
+![](../../assets/img/courses/id5415/module1/2_5_1.png)
+
+Kill the Terminal (little trashcan icon) and open a new Terminal to load this new environment. Notice the difference, the Terminal statement start with `(venv)` and the Python environment is selected in the bottom panel.
+
+![Virtualenv](/assets/img/courses/id5415/module1/2_5_2.png)
 
 **What did we achieved?**
 
-* we have a machine ready for developing, executing and sharing Python code.
+- We have a machine ready for developing, executing and sharing Python code.
 
 # Step 3: A Light Bulb
 
@@ -204,9 +226,9 @@ The 101 step of any light bulb is to screw it on a socket, the LS100 series fit 
 
 To interact with the light bulb, we will rely on a Python library. A software library is a set of data, piece of code and documentation. In our case, the [python-kasa](https://python-kasa.readthedocs.io/en/latest/index.html) library will help us interact with the light bulb.
 
-Back to VS Code in your course directory, open a Terminal.
+To install this library, go back to VS Code in your course directory and open a Terminal.
 
-We use pip to install Python library. Thanks to the [pipenv setup](#task-2.4), we can install this library inside the course folder only, avoiding any disruption of other Python program on your machine. In the following command,the --pre option signal that we want to install the most recent version of the library, including pre-release.
+We will use pip to install Python library. Thanks to the [pipenv setup](#task-2.4), we can install this library inside the course folder only, avoiding any disruption of other Python program on your machine. In the following command,the --pre option signal that we want to install the most recent version of the library, including pre-release.
 
 ```bash
 pip install python-kasa --pre
@@ -217,7 +239,7 @@ pip install python-kasa --pre
 To connect the light bulb to the network, we need to provision it with the WiFi network information. Taken out of [the documentation](https://python-kasa.readthedocs.io/en/latest/cli.html#provisioning), here are the steps:
 
 1. You need to turn on and of the light bulb 3 times in a row. The light bulb blinks a couple of times. This is the way to let it disconnect from any network and start emitting its own WiFi network;
-2. Connect your computer to the light bulb network (it should appear as TP-LINK_Smart Bulb_...). Make sure that your machine is not connected to a wired network at the same time.
+2. Connect your computer to the light bulb network (it should appear as TP-LINK*Smart Bulb*...). Make sure that your machine is not connected to a wired network at the same time.
 3. Run the kasa discover command to locate the IP address of the device (likely 192.168.0.1)
 
 ```bash
@@ -228,7 +250,7 @@ TODO screenshot result
 
 When the light bulb is found, at the top of the result you will note 'Host:' followed by 4 digits seperated by dots. This is the IP address of the light bulb on the network, i.e. the address to send messages to it.
 
-* You can scan for the WiFi networks, in case you do not know which one to connect the light bulb to.
+- You can scan for the WiFi networks, in case you do not know which one to connect the light bulb to.
 
 ```bash
 kasa wifi scan
@@ -236,7 +258,7 @@ kasa wifi scan
 
 TODO screenshot result
 
-* Finally, we send a message to the light bulb with the WiFi network information. In the following command, the host is the IP address of the light bulb identified in step 3, 'wifi join' are the command and subcommand, 'ioSense-net' is the SSID of the network to connect to (i.e. name of the network), the password option provision the network password and keytype is the category of network.
+- Finally, we send a message to the light bulb with the WiFi network information. In the following command, the host is the IP address of the light bulb identified in step 3, 'wifi join' are the command and subcommand, 'ioSense-net' is the SSID of the network to connect to (i.e. name of the network), the password option provision the network password and keytype is the category of network.
 
 ```bash
 kasa --host "192.168.0.1" wifi join "ioSense-net" --password iot2017! --keytype="3"
@@ -252,7 +274,7 @@ TODO screenshot result
 
 ## Task 3.4 Interacting with the Light Bulb
 
-It is now the time to explore what are the capabilities, using the [documentation](https://python-kasa.readthedocs.io) or the --help option  
+It is now the time to explore what are the capabilities, using the [documentation](https://python-kasa.readthedocs.io) or the --help option
 
 ```bash
 kasa --help
@@ -264,7 +286,7 @@ TODO a few command examples
 
 **What did we achieved?**
 
-* we are able to control the conected light bulb from our computer
+- we are able to control the connected light bulb from our computer
 
 # Step 4: A Home Hub
 
@@ -284,7 +306,7 @@ To install this image on the SD card, download and install Etcher: [Etcher](http
 
 Starting Etcher, you first select your image file, then your SD card, and 'Flash'.
 
-Slide in the SD card intothe Raspberry Pi and power it with the USB micro charger. Avoid powering the Raspberry Pi with your laptop as it draws more power than your USB port are designed for.
+Slide in the SD card into the Raspberry Pi and power it with the USB micro charger. Avoid powering the Raspberry Pi with your laptop as it draws more power than your USB port are designed for.
 
 If you properly entered the details of your home network, your Raspberry Pi should automatically connect to this network. After a couple of minutes, refresh your Thing page on the Bucket web app. You should see the IP address of your Raspberry Pi at the top of the page. We will use the local IP address.
 
@@ -292,9 +314,9 @@ TODO Screenshot Bucket with IP address
 
 ## Task 4.2: Connecting to the Raspberry Pi
 
-You can connect your Raspberry Pi to a screen, a keyboard and a mouse to use it as you would use your own computer. However, while prototyping your Raspberry Pi is often embbedded in your setting and knowing how to handle it remotly is an important skill to have.
+You can connect your Raspberry Pi to a screen, a keyboard and a mouse to use it as you would use your own computer. However, while prototyping your Raspberry Pi is often embbedded in your setting and knowing how to handle it remotely is an important skill to have.
 
-Throughout this course, we will thus access the Raspberry Pi remotly. For this we will use the ssh command as follows. Replace the square brackets with the username and hostname that you provisioned on Bucket. Pressing enter, you will be prompt for your password. The
+Throughout this course, we will thus access the Raspberry Pi remotely. For this we will use the ssh command as follows. Replace the square brackets with the username and hostname that you provisioned on Bucket. Pressing enter, you will be prompt for your password. The
 
 ```bash
 ssh [username]@[hostname]
@@ -302,7 +324,7 @@ ssh [username]@[hostname]
 
 TODO Screenshot login ssh (including yes/no prompt for known host)
 
-Another way to connect to your Raspberry Pi, less convenient but often more reliable, is via its local IP Address (displayed on the Bucket web app). It is composed of 4 numbers separated by dots. 
+Another way to connect to your Raspberry Pi, less convenient but often more reliable, is via its local IP Address (displayed on the Bucket web app). It is composed of 4 numbers separated by dots.
 
 ```bash
 ssh [username]@[your.local.IP.address]
@@ -310,7 +332,7 @@ ssh [username]@[your.local.IP.address]
 
 ## Task 4.3: Controlling the Light Bulb
 
-As a final task for this assignment, let's replicate what you achieved on your laptop controlling the lightbulb.
+As a final task for this assignment, let's replicate what you achieved on your laptop controlling the light-bulb.
 
 On the Raspberry Pi, let's create a test directory with the command 'mkdir' and navigate inside it with the command 'cd'.
 
@@ -325,7 +347,6 @@ As we already connected the light bulb to the network, we can skip the network p
 
 TODO example commands
 
-
 **What did we achieved?**
 
-* we have a Raspberry Pi up and running, connected to the same network as the lightbul and able to control it.
+- we have a Raspberry Pi up and running, connected to the same network as the light-bul and able to control it.
