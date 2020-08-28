@@ -12,7 +12,6 @@ _drafts
 .sass-cache
 Gemfile
 Gemfile.lock
-package.json
 *.gem
 *.gemspec
 examples/twitter/.env

@@ -20,6 +20,8 @@ report:
 
 TODO full Lab XP
 
+We are now able to control the connected lightbulb from a Python program.
+
 # Step 1: Create a Light Bulb 'Thing'
 
 ## Task 1.1: Private/Public keys
