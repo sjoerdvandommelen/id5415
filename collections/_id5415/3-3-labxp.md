@@ -64,8 +64,8 @@ def update_light():
 	# calibration to LUX  needs to be done
 
 	try:
-		lux = LDR_sensor.value # between 0 (dark) and 1 (light)
-		lux = lux*100 # dummy calibration
+	    lux = LDR_sensor.value # between 0 (dark) and 1 (light)
+  	    lux = lux*100 # dummy calibration
 	    my_property_cpu.update_values((lux,))	
 	except RuntimeError as error:
 	    print(error.args[0])
@@ -94,7 +94,7 @@ def update_temp():
 
 def update_humidity():
 	try:
-		humidity = dht_sensor.humidity
+	    humidity = dht_sensor.humidity
 	    my_property_humidity.update_values((humidity),)
 	except RuntimeError as error:
 	    # DHT Errors can happen fairly often
