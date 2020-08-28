@@ -1,6 +1,6 @@
 ---
 layout: course-page
-title: "Shaping behavior with code"
+title: "Shaping behaviour with code"
 permalink: /module2/assignment
 description: "Prototyping Connected Product - Assignment 2"
 assignment-id: 2
@@ -23,23 +23,25 @@ In the previous module we setup a prototyping environment and we explored the be
 
 # Step 1: Git Flow
 
+You got acquainted to 
+
 ## Task 1.1: Getting the Shared Repository on your Machine
 
-To get your shared repository on your machine, we use 'git clone' with the url to your repository. You can find this url on the GitHub page of your repository. Click on the green drop down button 'Code' and copy the url.
+To get your shared repository on your machine, we use 'git clone' with the URL to your repository. You can find this URL on the GitHub page of your repository. Click on the green drop down button 'Code' and copy the URL.
 
 In VS Code you can click on the Source Control button (3rd icon in the left panel) and 'clone repository'.
 
 TODO Screenshot
 
-In the text field that open at the top, paste the url of your repository and press ENTER.
+In the text field that open at the top, paste the URL of your repository and press ENTER.
 
 You now have a copy of your team repository on your machine. In the left panel you will recognise the tree of files and directories, including the doc,src and README.md.
 
 ## Task 1.2 Edit your files
 
-As we were editing the README.md file on GitHub in the previous module, we can do the same here on our machine.
+As we were editing the file `README.md` on GitHub in the previous module, we can do the same here on our machine.
 
-Each team member can, on its own machine, drag and drop a picture of her/himself in the directory doc/images. You note that this file is shown in green font: it is a new file to new file to track.
+Each team member can, on its own machine, drag and drop a picture of her/himself in the directory doc/images. You note that this file is shown in a green font: it is a new file to track.
 
 Then, open the README.md and edit the Contributor section to show the profile picture. We use again the Markdown image command, adding a maximum width 200 pixels (we don't want the pic to appear unreasonably big).
 
@@ -47,7 +49,7 @@ Then, open the README.md and edit the Contributor section to show the profile pi
 ![John Doe](doc/images/john.jpg =200x)
 ```
 
-The README.md file appears now in yellow font: it has been modified.
+The README.md file appears now in a yellow font: it has been modified.
 
 ## Task 1.3 Stage and Commit Changes
 
@@ -55,7 +57,7 @@ We can now prepare our files for a new version. We select the changes we want in
 
 TODO screenshot list of changes, click on the + to stage changes
 
-Then, we create the new version on our machine. This is called 'commiting'
+Then, we create a new version on our machine. This is called `committing`
 
 TODO screenshot commit message and validate button
 
@@ -65,7 +67,7 @@ At this stage, each team member as a new version of the repository on its own ma
 
 TODO screenshot synchronize button
 
-Clicking on this button triggers three action:
+Clicking on this button triggers three actions:
 * it 'fetches' the new version from GitHub
 * it 'merges' this version with the local version
 * it 'pushes' the new, merged version on GitHub 
@@ -74,16 +76,16 @@ If the merge does not succeed automatically, it prompt you to let you choose, fo
 
 ## Task 1.5 Create a Branch
 
-As every team member start making large contribution to the repository, we can quickly see how merging can get complicated. To minimise this challenge, we suggest the combination of 2 strategies:
+As every team member start making larger contributions to the repository, we can quickly see how merging can get complicated. To minimise this challenge, we suggest a combination of 2 strategies:
 
-* Commit your code as often as possible. The smaller the versions, the greater chances of automatic merge.
+* Commit your code as often as possible. The smaller the versions, the greater chances of a successful automatic merge.
 * Create separate branches for your features.
 
 TODO In Git, a branch is 
 
-TODO screenshot create new branch
+TODO screenshot create a new branch
 
-By default you are on the 'master' branch. In VS Code you can create a branch by clicking on the bottom left corner on 'master' (the name of your current branch). A menu pops up, click 'Create new branch from'. In the text field, provide the name of your new feature, e.g. 'feature/john-python-exploration'. Then select the branch 'master' (your branch will start from the master).
+By default, you are on the `master` branch. In VS Code you can create a branch by clicking on the bottom left corner on 'master' (the name of your current branch). A menu pops up, click `Create a new branch from`. In the text field, provide the name of your new feature, e.g. 'feature/john-python-exploration'. Then select the branch 'master' (your branch will start from the master).
 
 TODO screenshot selection master
 
@@ -97,7 +99,7 @@ Now each team member can explore Python in there own branch, committing new vers
 
 We write Python code into files with `.py` extension. Let's create a new file `light.py` in the src directory.
 
-TODO screenshot right click on src, create new file
+TODO screenshot right click on src, create a new file
 
 Paste the following lines in the file light.py
 
@@ -162,7 +164,7 @@ Execute your code again. We now have our message back. First, we define `main()`
 
 ## Task 3.2 Libraries
 
-Our Python code is far from having the ability to talk to the light bulb yet. Fortunatelly we do not reinvent the wheel for every piece of code. We can reuse code written by others: these are called libraries. Add the following 2 lines at the top of your code.
+Our Python code is far from having the ability to talk to the light bulb yet. Fortunately we do not reinvent the wheel for every piece of code. We can reuse code written by others: these are called libraries. Add the following 2 lines at the top of your code.
 
 ```python
 import asyncio
@@ -222,7 +224,7 @@ The transformation of your code looks like this:
 
 ![Code transformation](/assets/img/courses/id5415/module2/code-transformation.png)
 
-Let's run this code! The light should turn on and the Terminal shoul look like that:
+Let's run this code! The light should turn on and the Terminal should look like that:
 
 ![Turn On](/assets/img/courses/id5415/module2/turn-on.png)
 
@@ -260,6 +262,6 @@ In our example, you can recognise the key 'on_off', an `integer` with value `1`:
 
 
 
-**CHANGELOG** In this assignment you have made significant addition to your prototype. Edit the file `CHANGELOG.md`
+**Updating the CHANGELOG file** In this assignment you have made significant additions to your prototype. Edit the file `CHANGELOG.md`
 
-**IssueG** In this assignment you have made significant addition to your prototype. Edit the file `CHANGELOG.md`
+**Filing an Issue** 

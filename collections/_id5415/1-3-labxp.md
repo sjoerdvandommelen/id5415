@@ -1,20 +1,19 @@
 ---
 layout: course-page
-title: "Reverse Engineering"
+title: 'Reverse Engineering'
 permalink: /module1/labxp
-description: "Prototyping Connected Products - Lab Experiment 1"
+description: 'Prototyping Connected Products - Lab Experiment 1'
 labxp-of: id5415-1
-introduction: Lab experiment is the term we use in this course for making use of the prototype through test and analysis. In this Lab experiment, we will explore the  data that is automatically generated from your Raspberry Pi. We will have a first taste of data exploration and use these insights to infer how the system works.
+introduction: Lab experiment is the term we use in this course for making use of the prototype through test and analysis. In this Lab experiment, we will explore the  data that is automatically generated from your Raspberry Pi. We will have the first taste of data exploration and use these insights to infer how the system works.
 technique: Data Exploration, Reverse Engineering
 metrics:
 report: System Architecture, System Data Visualisation
 ---
 
-
 ---
 
-* Do not remove this line (it will not be displayed)
-{:toc}
+- Do not remove this line (it will not be displayed)
+  {:toc}
 
 ---
 
@@ -26,35 +25,37 @@ From the matchmaking event of the first coaching session, you should now be part
 
 **Note:** Keep in mind that during the coaching sessions you will receive feedback only based on what you share on this repository.
 
-
 ## Task 1.1: GitHub invitation
 
 Use the GitHub invitation link shared by the course coordinator to create your repository. You will be prompt for the name of your team. Make sure you enter the same name as your teammates.
 
 TODO little tour of the GitHub interface and repository
-* doc folder
-* src folder
-* ChangeLog file
+
+- doc folder
+- src folder
+- ChangeLog file
 
 ## Task 1.2: Markdown
 
 Markdown is a markup language to quickly format text. This is the language used throughout the developer community to format code documentation. In this course you will use Markdown to report on assignments and lab experiments. Let's walk through the basics.
 
-On GitHub, edit the README.md (.md for MarkDown).
+On GitHub, edit the `README.md` (`.md` for MarkDown).
 
-TODO screenshot
+![](../../assets/img/courses/id5415/module1/labxp/1_2_1.png)
 
-The README.md file is the first document to show up when reaching your repository. Let's give it a personalised touch. Hash # signs are used for title. Create a contributors' section and list the name and 1-sentence bio of your team members.
+The README.md file is the first document to show up when reaching your repository. Let's give it a personalised touch. Hash `#` signs are used for headers. Create a contributors' section and list the name and 1-sentence bio of your team members.
 
 ```markdown
 # Contributors
 
-* John, ...
-* Yu, ...
-* Els, ...
+- John, ...
+- Yu, ...
+- Els, ...
 ```
 
 You can preview your changes, then press the green button 'Commit changes' to save (more on this terminology in assignment 2).
+
+![](../../assets/img/courses/id5415/module1/labxp/1_2_2.png)
 
 You can add tables, images, links and so on with similar tags. We now set a introduction image. Click on the 'doc' folder then 'images'. Click on the drop down menu Add File > Upload files and drag and drop your image. Once again, press the green button 'Commit changes' to save (this can take a while).
 
@@ -64,14 +65,14 @@ Back to your README.md, type in the following at the top of the file (replace pr
 ![Project Banner](doc/images/projectbanner.png)
 ```
 
-TODO screenshot example result
+![](../../assets/img/courses/id5415/module1/labxp/1_2_3.png)
 
 A cheat sheet of Markdown can be found [here](https://www.markdownguide.org/cheat-sheet/)
 
 **What did we achieved?**
 
-* we have a GitHub repository, ready to report a lab experiment
-* we have some basics of formatting for reporting
+- we have a GitHub repository, ready to report a lab experiment
+- we have some basics of formatting for reporting
 
 # Step 2: Identifying the IoT's Technology Stack
 
@@ -81,28 +82,28 @@ In the self-study material we explored the IoT's technology stack. Let's identif
 
 ## Task 2.1: System Architecture
 
-* What are the device hardware components? 
-* What are the device software components?
-* What are the communication components?
-* What are the cloud platform components?
-* What are the cloud application components?
+- What are the device hardware components?
+- What are the device software components?
+- What are the communication components?
+- What are the cloud platform components?
+- What are the cloud application components?
 
 In this exercise, do not hesitate to distinguish:
 
-* what you know and how?
-* What you assume. In this case, what are the possibilities and why do you make this assumption?
+- what you know and how?
+- What you assume. In this case, what are the possibilities and why do you make this assumption?
 
 **Report** On GitHub, in the doc folder, create a file architecture.md. Describe this IoT stack with text and diagrams.
 
-There is no clear standard to represent an IoT Architecture. Your diagram should focus on what you think is important to communicate. However, keep in mind that your audience can be very divers from a Designer to a software or data engineering.
+There is no clear standard to represent an IoT Architecture. Your diagram should focus on what you think is important to communicate. However, keep in mind that your audience can be very divers from a Designer to software or data engineering.
 
 # Step 3: Logs
 
-It is common for software to generate logs, so that the maintainers can monitor it and look for information when things go wrong.
+It is common for software to generate logs so that the maintainers can monitor it and look for information when things go wrong.
 
 TODO log exploration
 
-In the Raspberry Pi image that you downloaded from Bucket, we installed a couple of Python scripts. Instead of looking a the the code, that we do not understand yet, let's looks at the logs of these scripts.
+In the Raspberry Pi image that you downloaded from Bucket, we installed a couple of Python scripts. Instead of looking a the code, that we do not understand yet, let's looks at the logs of these scripts.
 
 ## Task 3.1 Find the Logs
 
@@ -119,10 +120,10 @@ cd /var/log/dcd
 What is in this folder? Let's list its content:
 
 ```bash
-ls 
+ls
 ```
 
-We can see there is one directory with id id of your Thing. We now enter this folder, replacing the square braquets with your own Thing id as listed in the folder.
+We can see there is one directory named after your Thing id. We now enter this folder, replacing the square brackets with your Thing id as listed in the folder.
 
 ```bash
 cd [your thing id]
@@ -130,7 +131,7 @@ cd [your thing id]
 
 ## Task 3.2 Read the Logs
 
-Use the ls command again to list the content of this directory. You should see files with name like the followings:
+Use the ls command again to list the content of this directory. You should see files with names like the followings:
 
 ```bash
 2020-08-22.log
@@ -139,34 +140,35 @@ Use the ls command again to list the content of this directory. You should see f
 2020-08-25.log
 ```
 
-Our Python script store logs in a different file every day to make it easier to browse through them. Let's read the contain of one a them with the cat command (read file and show it in the terminal). Replace the name of the file by a date that exist in your log folder.
+Our Python script store logs in a different file every day to make it easier to browse through them. Let's open one of them with the command `cat` (read a file and show it in the Terminal). Replace the name of the file by a date that exist in your log folder.
 
 ```bash
 cat 2020-08-24.log
 ```
 
-TODO screen shot output example
+![](../../assets/img/courses/id5415/module1/labxp/3_2_1.png)
 
 ## Task 3.3: Downloading Logs
 
-It is often convenient to have the ability to explore log files (or any data file) on your laptop. We achieve this with the scp command (s for ssh and cp for copy): we want to remotly copy.
+It is often convenient to have the ability to explore log files (or any data file) on your laptop. We achieve this with the `scp` command (`s` standing for `ssh` and `cp` standing for copying): we want to remotely copy.
 
-Back on your computer, open VS Code and its Terminal, and type in the following command, replacing the square barckets with your own username, hostname and thing id. This command means that we copy from the remote Raspberry Pi the directory containing the log of your thing into the local directory backup_log (in your current folder, on your computer)
+Back on your computer, open VS Code and its Terminal, and type in the following command, replacing the square brackets with your own username, hostname and thing id. This command means that we copy from the remote Raspberry Pi the directory containing the log of your thing into the local directory backup_log (in your current folder, on your computer)
 
 ```bash
-scp [username]@[hostname]:/var/log/[your thing id] ./backup_log 
+scp [username]@[hostname]:/var/log/[your thing id] ./backup_log
 ```
 
 ## Task 3.4 Analyse the Logs
 
-* Look at the first log file in time. It should contain some information about what happens when the Raspberry Pi start.
-* Identify repeating patterns, these are most likely pieces of code running in loops
-* Look for decision 'The thing is connected to the Intrenet.'
+- Look at the first log file in time. It should contain some information about what happens when the Raspberry Pi start.
+- Identify repeating patterns, these are most likely pieces of code running in loops
+- Look for decision 'The thing is connected to the Internet.'
 
 **Report** On GitHub, in the doc folder, create a flow.md file to explain what the system does and draw a basic flow chart.
+Wondering what is Flowchart? Look at the example below!
 
 TODO example of flow chart including: diamond with question, square with action, arrow looping back
-
+![](../../assets/img/courses/id5415/module1/labxp/3_4_1.png)
 
 # Step 4: Data visualisation
 
@@ -178,7 +180,7 @@ From your web browser, go to [https://dwd.tudelft.nl/grafana](https://dwd.tudelf
 
 Reaching the home page of Grafana, you can see a directory with your username containing a dashboard with the name of your Thing. Click on the dashboard to open it.
 
-TODO Grafana create folder with editor rights when create user
+TODO Grafana create a folder with editor rights when creating a user
 TODO create dashboard when creating a thing
 
 ## Task 4.1: Explore Data
