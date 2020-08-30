@@ -15,7 +15,7 @@ computational_concepts: Data
 ---
 
 - Do not remove this line (it will not be displayed)
-{:toc}
+  {:toc}
 
 ---
 
@@ -31,7 +31,7 @@ In this course, we will rely on a set of tools that we developed at IDE to keep 
 
 Here is a little tour:
 
-[![Introduction to Bucket](https://img.youtube.com/vi/H2Ogmi1J-P8/0.jpg)](https://youtu.be/H2Ogmi1J-P8 "Introduction to Bucket")
+[![Introduction to Bucket](https://img.youtube.com/vi/H2Ogmi1J-P8/0.jpg)](https://youtu.be/H2Ogmi1J-P8 'Introduction to Bucket')
 
 Throughout the course, we will rely on these tools to collect and visualise data, but also to check the status of our 'Things' on the Internet.
 
@@ -39,7 +39,7 @@ Throughout the course, we will rely on these tools to collect and visualise data
 
 To create your DCD Lab account, go to [Bucket](https://dwd.tudelft.nl/bucket) and click the blue button sign In / Sign Up. Similar to your TU Delft account, all our tools are accessible via a single account from our Lab.
 
-![Sign Up Screen](/assets/img/courses/id5415/module1/1_1.png)
+![Sign Up Screen](/assets/img/courses/id5415/module1/assignment/1_1.png)
 
 You land on the dashboard of Bucket.
 
@@ -60,13 +60,13 @@ Let's walk through these input fields and their purpose. Keep in mind that **we 
 
 The first section is about restricting access to your Raspberry Pi. As you will store network information on your Raspberry Pi, it is essential to set it up in a way that prevent others to access it.
 
-![Create Thing with Wifi Credentials that connects to the internet](/assets/img/courses/id5415/module1/1_2_21.png)
+![Create Thing with Wifi Credentials that connects to the internet](/assets/img/courses/id5415/module1/assignment/1_2_21.png)
 
 The second section is about connecting to the network. Eduroam is an enterprise-grade network which requires several challenging interventions on the Raspberry Pi system. Filling in your NetId and password, we make sure that your Raspberry Pi can automatically connect to Eduroam and manage your credential properly. We conveniently provide a similar function for your home network.
 
-![Home network](/assets/img/courses/id5415/module1/1_2_22.png)
+![Home network](/assets/img/courses/id5415/module1/assignment/1_2_22.png)
 
-![Eduroam](/assets/img/courses/id5415/module1/1_2_23.png)
+![Eduroam](/assets/img/courses/id5415/module1/assignment/1_2_23.png)
 
 Once you have filled in all the information in section 1 and 2, click the 'Create' button. The page should update with your newly created Thing. However, it will take a 'long' time to generate your image. You can see a status indicator which will turn into a 'Download' button when your image is ready.
 
@@ -98,9 +98,9 @@ Create a folder on your computer (i.e Desktop) to store the files for this cours
 - The left panel relates to the management of your files with from the top: 1. the tree of your project files 2. searching into your project files 3. managing your file with Git. This is the whole menu of Module 2;
 - The bottom panel relates to the execution of programs. We will especially look at the Terminal tab in the next task.
 
-![Tour to VS Code](/assets/img/courses/id5415/module1/2_2.png)
+![Tour to VS Code](/assets/img/courses/id5415/module1/assignment/2_2.png)
 
-[![Getting Started with VS Code](https://img.youtube.com/vi/Sdg0ef2PpBw/0.jpg)](https://youtu.be/Sdg0ef2PpBw "Getting Started with VS Code")
+[![Getting Started with VS Code](https://img.youtube.com/vi/Sdg0ef2PpBw/0.jpg)](https://youtu.be/Sdg0ef2PpBw 'Getting Started with VS Code')
 
 ## Task 2.3: Basics of a Command-line Interpreter (CLI)
 
@@ -112,7 +112,7 @@ To find the Terminal in VS Code, go to View > Terminal. It opens a tab in the bo
 
 On Windows, the installation of Git should have install bash, **you must select bash instead of Power Shell.**
 
-![Introduction to VSCode Terminal](/assets/img/courses/id5415/module1/2_3_1.png)
+![Introduction to VSCode Terminal](/assets/img/courses/id5415/module1/assignment/2_3_1.png)
 
 Each command line start with your username @ your machine name. Then, the current folder is shown
 
@@ -132,7 +132,7 @@ ls
 
 Your test folder should appear as a result of this command as shown below.
 
-![](/assets/img/courses/id5415/module1/2_3_2_1.png)
+![](/assets/img/courses/id5415/module1/assignment/2_3_2_1.png)
 
 Most commands come with a manual, available with the command `man`. Let's explore the option of the `ls` command.
 
@@ -140,7 +140,7 @@ Most commands come with a manual, available with the command `man`. Let's explor
 man ls
 ```
 
-![](/assets/img/courses/id5415/module1/2_3_2_2.png)
+![](/assets/img/courses/id5415/module1/assignment/2_3_2_2.png)
 
 You can see a long list of option, starting with a dash `-`. These options can be combined together. For instance you will note `-G` for colouring the result and `-l` for the long and detailed result. To quit the manual, press `q`. Now we can try:
 
@@ -148,7 +148,7 @@ You can see a long list of option, starting with a dash `-`. These options can b
 ls -Gl
 ```
 
-![](/assets/img/courses/id5415/module1/2_3_2_3.png)
+![](/assets/img/courses/id5415/module1/assignment/2_3_2_3.png)
 
 In the terminal, everything relates to where you are in the file tree, i.e. in which folder you are in. With the command `cd` you can 'change directory' to navigate this tree. The 'path' is the chain of directories to reach your targeted file or directory.
 
@@ -156,7 +156,7 @@ In the terminal, everything relates to where you are in the file tree, i.e. in w
 cd test
 ```
 
-![](/assets/img/courses/id5415/module1/2_3_2_4.png)
+![](/assets/img/courses/id5415/module1/assignment/2_3_2_4.png)
 
 You entered 'test' folder, you can notice the command line is now showing 'test' as the current folder. There are three important path markers: dot `.` for the current directory, dot dot `..` for the parent directory, and tilde `~` for the home directory.
 
@@ -166,7 +166,7 @@ Going back to the parent directory:
 cd ..
 ```
 
-![](/assets/img/courses/id5415/module1/2_3_2_5.png)
+![](/assets/img/courses/id5415/module1/assignment/2_3_2_5.png)
 
 Finally, the tilde `~` leads you to your home directory:
 
@@ -174,7 +174,7 @@ Finally, the tilde `~` leads you to your home directory:
 cd ~
 ```
 
-![](/assets/img/courses/id5415/module1/2_3_2_6.png)
+![](/assets/img/courses/id5415/module1/assignment/2_3_2_6.png)
 
 To avoid typing the same command again and again,you can press the Arrow-Up key to bring back you previous commands.
 
@@ -208,11 +208,11 @@ virtualenv venv
 
 VS Code recognises the creation of this new environment and ask you if you want to switch(Bottom right corner of the screen), click 'Yes'.
 
-![](/assets/img/courses/id5415/module1/2_5_1.png)
+![](/assets/img/courses/id5415/module1/assignment/2_5_1.png)
 
 Kill the Terminal (little trashcan icon) and open a new Terminal to load this new environment. Notice the difference, the Terminal statement start with `(venv)` and the Python environment is selected in the bottom panel.
 
-![Virtualenv](/assets/img/courses/id5415/module1/2_5_2.png)
+![Virtualenv](/assets/img/courses/id5415/module1/assignment/2_5_2.png)
 
 **What did we achieved?**
 
@@ -290,7 +290,7 @@ TODO a few command examples
 
 **What did we achieved?**
 
-* we are able to control the connected light bulb from our computer
+- we are able to control the connected light bulb from our computer
 
 # Step 4: A Home Hub
 
@@ -310,7 +310,7 @@ Slide in the SD card into the Raspberry Pi and power it with the USB micro charg
 
 If you properly entered the details of your home network, your Raspberry Pi should automatically connect to this network. After a couple of minutes, refresh your Thing page on the Bucket web app. You should see the IP address of your Raspberry Pi at the top of the page. We will use the local IP address.
 
-![Connected Thing](/assets/img/courses/id5415/module1/4_1.png)
+![Connected Thing](/assets/img/courses/id5415/module1/assignment/4_1.png)
 
 ## Task 4.2: Connecting to the Raspberry Pi
 
@@ -349,4 +349,4 @@ TODO example commands
 
 **What did we achieved?**
 
-* we have a Raspberry Pi up and running, connected to the same network as the lightbulb and able to control it.
+- we have a Raspberry Pi up and running, connected to the same network as the light-bul and able to control it.
