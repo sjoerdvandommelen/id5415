@@ -21,44 +21,30 @@ computational_concepts: Data
 
 TODO To review
 
+We have prepared 5 steps for this assignment (each again divided into specific tasks you have to perform).
+
+1 Set up your cloud and prepare a configuration for your Rapsberry Pi to properly connect with that cloud. 
+
+2 Set up the tools in this cloud that you will use for your connnected lighting system.
+
+
 # Step 1: A cloud
 
-We will see in module 5 the concepts of cloud and web services. For now, we will assume that we need something on the Internet that helps us collect and visualise data.
+A core component of the technology stack of IoT is the `cloud': the location somewhere on the internet where we keep the data we want to use and the tools that determine how we will use this data. It will not be until module 5 before we actually start using could data and toosl in the assignments. However, in this first assignment we will prepare for that by setting up the cloud.
 
-Today there are plenty of such cloud services as it is a core component of the IoT technology stack.
+## Task 1.1 Activate your space in 'Bucket".
 
-In this course, we will rely on a set of tools that we developed at IDE to keep control of the functionalities and the data.
+Our Data Centric Design Lab (DCD Lab) has prepared a space online where it it easy for the students in this course to create their cloud. It is called [Bucket](https://dwd.tudelft.nl/bucket) and [here](https://youtu.be/H2Ogmi1J-P8 'Introduction to Bucket') you can find a little tour to familiarize yourself with Bucket. To access and use it, you will create your DCD Lab account. Use your TU email.
 
-Here is a little tour:
+## Task 1.2 Setup your Raspberry Pi as a Thing in your cloud and create a Disk Image
 
-[![Introduction to Bucket](https://img.youtube.com/vi/H2Ogmi1J-P8/0.jpg)](https://youtu.be/H2Ogmi1J-P8 'Introduction to Bucket')
-
-Throughout the course, we will rely on these tools to collect and visualise data, but also to check the status of our 'Things' on the Internet.
-
-## Task 1.1 Create a DCD Lab account
-
-To create your DCD Lab account, go to [Bucket](https://dwd.tudelft.nl/bucket) and click the blue button sign In / Sign Up. Similar to your TU Delft account, all our tools are accessible via a single account from our Lab.
-
-![Sign Up Screen](/assets/img/courses/id5415/module1/assignment/1_1.png)
-
-You land on the dashboard of Bucket.
-
-## Task 1.2 Create a Raspberry Pi Thing
-
-Once you log into Bucket, the dashboard shows an empty page with a form to create a Thing.
-
-Following the phrasing of the Internet of Things, we've adopted this terminology to represent any physical or virtual entity that connect to the Internet and generate data. Thus, the 'Thing' that we create on Bucket is the 'digital twin' of the physical device, i.e. a virtual representation that contain data about the physical device.
+Once you log into Bucket, the dashboard shows an empty page with a form to create a `Thing'. In the terminology of IoT a 'Thing' refers to any physical or virtual entity that is connected to the internet and is involved in the exchange of data. To be able to do something with data uing our Raspberry Pi, we need it to show up here as a thing and therefore we will create its digital twin here. Type in a name and a description, and select the type 'Raspberry Pi'.
 
 TODO drawing of the physical Thing and its digital twin on Bucket.
 
-Let's create a Thing for our Raspberry Pi, this little computer as part of the prototyping kit. Type in a name and a description, and select the type 'Raspberry Pi'.
+You will notice many settings will appear. We will now go through the correct settings and gather these settings into a disk image, that you will later blend into your Raspberry Pi through a USB stick for it to be configured properly (so that you can start working with it). Keep in mind that **we do not store any of this information. Only you, the owner of the Thing can create and download the settings through a secured connection**.
 
-
-Many input fields appear. As setting up a Raspberry Pi in a proper way can be cumbersome, Bucket will use this information to prepare a secured disk image for you ready to use. You can burn this disk image on a memory stick and plug it into Raspberry Pi with all necessary configuration to start working.
-
-Let's walk through these input fields and their purpose. Keep in mind that **we do not store any of this information. We blend it into a Raspberry Pi image that only you, owner of the Thing you are creating, can download through a secured connection**.
-
-The first section is about restricting access to your Raspberry Pi. As you will store network information on your Raspberry Pi, it is essential to set it up in a way that prevent others to access it.
+The first section of settings is about restricting access to your Raspberry Pi. As you will store network information on your Raspberry Pi, it is essential to set it up in a way that prevent others to access it.
 
 ![Create Thing with Wifi Credentials that connects to the internet](/assets/img/courses/id5415/module1/assignment/1_2_21.png)
 
@@ -68,28 +54,24 @@ The second section is about connecting to the network. Eduroam is an enterprise-
 
 ![Eduroam](/assets/img/courses/id5415/module1/assignment/1_2_23.png)
 
-Once you have filled in all the information in section 1 and 2, click the 'Create' button. The page should update with your newly created Thing. However, it will take a 'long' time to generate your image. You can see a status indicator which will turn into a 'Download' button when your image is ready.
+Once you have filled in all the information in section 1 and 2, click the 'Create' button. The page should update with your newly created Thing. However, it will take a 'long' time to generate your disk image. You can see a status indicator which will turn into a 'Download' button when your disk image is ready.
 
 You can proceed to the next step while waiting for your Raspberry Pi image to be ready.
 
-**What did we achieved?**
-
-- We have a cloud account enabling us to manage(create/read/update) the data of our prototype (Section 1).
-- We launch the generation of a ready-to-use system for the Raspberry Pi (Section 2).
-
 # Step 2: Four Key Development Tools
 
-Before we start coding in our next module, we need several tools to interact with the connected light bulb of the prototyping kit. Let's take this opportunity to introduce and install the tools we will use throughout the course.
+To be able to do any programming through coding in the next module(s), we need to set up several tools that are able to interact with the connected light bulb of the prototyping kit. Let's take this opportunity to introduce and install the tools we will use throughout the course.
 
 ## Task 2.1: Installing a Version Control System (VCS)
 
+{is this what you mean to point out: To be able to work as a team on coding, we need to have a collaorative environment suitable to manage that, called a VCS version Control System . We will use a VCS called Git}
 The first tool is Git, a Version Control System (VCS). A VCS facilitate the management of and the collaboration around a piece of code. We will cover Git and its purpose for prototyping connected products in the next module. For now, its installation (especially on Windows) helps us automatically set up a development environment.
 
 Download and install Git from the [official website](https://git-scm.com/download). On Mac you might go for the Binary installer option.
 
 ## Task 2.2: Installing an Integrated Development Environment (IDE)
 
-The next step is editing and executing code. Developers do this in an Integrated Development Environment (IDE), which simply is a text editor with conveniences of code editing and execution. For this course, we will choose Visual Studio Code (or VS Code) which brings all the necessary functionalities without being overly complicated.
+Actually editing and executing code is done in an Integrated Development Environment (IDE), which simply is a text editor customizd to code editing and execution. For this course, we will choose Visual Studio Code (or VS Code) which brings all the necessary functionalities without being overly complicated.
 
 Download and install Visual Studio Code from the [official website](https://code.visualstudio.com/).
 
@@ -102,21 +84,17 @@ Create a folder on your computer (i.e Desktop) to store the files for this cours
 
 [![Getting Started with VS Code](https://img.youtube.com/vi/Sdg0ef2PpBw/0.jpg)](https://youtu.be/Sdg0ef2PpBw 'Getting Started with VS Code')
 
-## Task 2.3: Basics of a Command-line Interpreter (CLI)
+## Task 2.3: Get familiar with the Command-line Interpreter (CLI)
 
-A Command-Line Interpreter (CLI) is no tool for one project but rather for your entire digital prototyping life! In the software jargon, it is known as: 'Unix shell', 'Console', 'Terminal' or 'Command Prompt'. Whether it is the software itself or the language that it relies on, all of them refer to this black window with full of scary lines. You write text, press enter, and it interprets this text as a command (e.g. create a directory, open an application). Why would we use this primitive text-based interaction instead of clicking on graphical buttons (so-called 'Graphical User Interface' or GUI)? When prototyping you are developing technologies and playing with cutting edge ones, mainly of which simply do not have GUIs.
+A CLI interprets the text you have entered into a command (e.g. create a directory, open an application, ...) - that's it! "What is the point?" you may wonder, as today we have many Graphical User Interfaces (GUI's) available that allow you to achieve many things as well, but without the cumbersome process of typing. Well, when prototyping you are developing technologies and playing with cutting edge ones, many of which simply do not have GUIs. Skill in a Command-Line Interpreter (CLI) is therefore not something you acquire just for one project but rather for your entire digital prototyping life! 
 
-### Task 2.3.1 Setting up in VS Code
-
-To find the Terminal in VS Code, go to View > Terminal. It opens a tab in the bottom panel. In this course we will use Unix shell as a command-line language which comes in different flavours, the most common being `bash` and `zsh`. On the top right corner of the Terminal, a drop-down menu give you several options.
+In software engineering a number of variaties exist: 'Unix shell', 'Console', 'Terminal' or 'Command Prompt'. All of them refer to this black window full lines of text. Find it in VS Code: go to View > Terminal. It opens a tab in the bottom panel. In this course we will use Unix shell as a command-line language, which comes in different flavours, the most common being `bash` and `zsh`. On the top right corner of the Terminal, a drop-down menu give you several options.
 
 On Windows, the installation of Git should have install bash, **you must select bash instead of Power Shell.**
 
 ![Introduction to VSCode Terminal](/assets/img/courses/id5415/module1/assignment/2_3_1.png)
 
 Each command line start with your username @ your machine name. Then, the current folder is shown
-
-### Task 2.3.2 Basic commands
 
 To execute a command simply type it, and press the `ENTER` key. Let's MaKe a Directory (Folder) named `test` with the command `mkdir`:
 
