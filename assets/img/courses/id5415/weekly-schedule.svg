@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.3.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 1920 1080" style="enable-background:new 0 0 1920 1080;" xml:space="preserve">
+	 viewBox="0 0 1920 1408.5" style="enable-background:new 0 0 1920 1408.5;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#F2F2F2;}
 	.st1{fill:#3FA9F5;}
-	.st2{font-family:'Open Sans', 'sans serif';}
-	.st3{font-size:36px;}
-	.st4{font-size:48px;}
+	.st2{fill:#CC6666;}
+	.st3{font-family:'PTSans-NarrowBold';}
+	.st4{font-size:36px;}
 	.st5{enable-background:new    ;}
+	.st6{font-size:48px;}
+	.st7{fill:#66CC66;}
 </style>
 <g>
 	<rect x="425" y="46" class="st0" width="347" height="458"/>
@@ -28,28 +31,55 @@
 	<rect x="787" y="544" class="st0" width="347" height="458"/>
 </g>
 <g>
-	<rect x="63" y="544" class="st1" width="347" height="458"/>
-</g>
-<g>
 	<rect x="1511" y="46" class="st1" width="347" height="458"/>
 </g>
 <g>
 	<rect x="1511" y="544" class="st1" width="347" height="458"/>
 </g>
 <g>
-	<rect x="63" y="289" class="st1" width="347" height="216"/>
+	<rect x="63" y="289" class="st2" width="347" height="216"/>
 </g>
 <g>
 	<rect x="63" y="46" class="st1" width="347" height="216"/>
 </g>
-<text transform="matrix(1 0 0 1 168.2175 1034.0723)" class="st2 st3">Monday</text>
-<text transform="matrix(1 0 0 1 528.6973 1034.073)" class="st2 st3">Tuesday</text>
-<text transform="matrix(1 0 0 1 862.8624 1034.0713)" class="st2 st3">Wednesday</text>
-<text transform="matrix(1 0 0 1 1244.4005 1034.0718)" class="st2 st3">Thursday</text>
-<text transform="matrix(1 0 0 1 1633.1981 1034.0725)" class="st2 st3">Friday</text>
-<text transform="matrix(1 0 0 1 105.4726 772.9999)" class="st2 st4">Assignment</text>
-<text transform="matrix(1 0 0 1 1538.4255 274.9995)" class="st5"><tspan x="0" y="0" class="st2 st4">Assignment /</tspan><tspan x="64.8" y="57.6" class="st2 st4">Lab XP </tspan></text>
-<text transform="matrix(1 0 0 1 1609.4536 773)" class="st2 st4">Lab XP</text>
-<text transform="matrix(1 0 0 1 124.7614 139.1224)" class="st5"><tspan x="0" y="0" class="st2 st4">Self-Study</tspan><tspan x="19.5" y="57.6" class="st2 st4">Material</tspan></text>
-<text transform="matrix(1 0 0 1 118.4684 422.0319)" class="st2 st4">Live Demo</text>
+<text transform="matrix(1 0 0 1 169.8378 1300.2249)" class="st3 st4">Monday</text>
+<text transform="matrix(1 0 0 1 530.3176 1300.2256)" class="st3 st4">Tuesday</text>
+<text transform="matrix(1 0 0 1 864.4828 1300.2239)" class="st3 st4">Wednesday</text>
+<text transform="matrix(1 0 0 1 1246.0209 1300.2244)" class="st3 st4">Thursday</text>
+<text transform="matrix(1 0 0 1 1634.8185 1300.2251)" class="st3 st4">Friday</text>
+<text transform="matrix(1 0 0 1 1571.6304 262)" class="st5"><tspan x="0" y="0" class="st3 st6">Assignment /</tspan><tspan x="48.2" y="57.6" class="st3 st6">Lab XP </tspan></text>
+<text transform="matrix(1 0 0 1 1624.7417 783.1757)" class="st3 st6">Lab XP</text>
+<text transform="matrix(1 0 0 1 147.7975 130.1935)" class="st5"><tspan x="0" y="0" class="st3 st6">Self-Study</tspan><tspan x="9" y="57.6" class="st3 st6">Materials</tspan></text>
+<text transform="matrix(1 0 0 1 131.6941 405.7332)" class="st3 st6">Live Session</text>
+<g>
+	<rect x="63" y="544" class="st1" width="347" height="216"/>
+</g>
+<g>
+	<rect x="63" y="1042" class="st2" width="347" height="216"/>
+</g>
+<g>
+	<rect x="425" y="1042" class="st0" width="347" height="216"/>
+</g>
+<g>
+	<rect x="786.5" y="1042" class="st0" width="347" height="216"/>
+</g>
+<g>
+	<rect x="1149" y="1042" class="st0" width="347" height="216"/>
+</g>
+<g>
+	<rect x="1511.5" y="1042" class="st0" width="347" height="216"/>
+</g>
+<g>
+	<rect x="63" y="783.8" class="st0" width="347" height="216"/>
+</g>
+<text transform="matrix(1 0 0 1 136.9263 658.5266)" class="st3 st6">Assignment</text>
+<text transform="matrix(1 0 0 1 71.9816 1138.3538)" class="st5"><tspan x="0" y="0" class="st3 st6">Coaching</tspan><tspan x="4.7" y="57.6" class="st3 st6">Sessions</tspan></text>
+<g>
+	<rect x="236.5" y="1042" class="st1" width="173.5" height="216"/>
+</g>
+<text transform="matrix(0.7071 0.7071 -0.7071 0.7071 245.7543 1091.2727)" class="st3 st6">Assignment</text>
+<rect x="15.4" y="544" class="st7" width="35.3" height="714"/>
+<text transform="matrix(1.633974e-07 -1 1 1.633974e-07 50.7252 1069.5853)" class="st3 st6">Technical Support</text>
+<rect x="1870.3" y="48.7" class="st7" width="33.2" height="953.3"/>
+<text transform="matrix(1.633974e-07 -1 1 1.633974e-07 1903.4443 725.4438)" class="st3 st6">Technical Support</text>
 </svg>
