@@ -57,7 +57,7 @@ You can preview your changes, then press the green button 'Commit changes' to sa
 
 ![](../../assets/img/courses/id5415/module1/labxp/1_2_2.png)
 
-You can add tables, images, links and so on with similar tags. We now set a introduction image. Click on the 'doc' folder then 'images'. Click on the drop down menu Add File > Upload files and drag and drop your image. Once again, press the green button 'Commit changes' to save (this can take a while).
+You can add tables, images, links and so on with similar tags. We now set a introduction image. Click on the 'doc' folder then 'images'. Click on the drop-down menu Add File > Upload files and drag and drop your image. Once again, press the green button 'Commit changes' to save (this can take a while).
 
 Back to your README.md, type in the following at the top of the file (replace projectbanner.png by the name of your file):
 
@@ -164,10 +164,10 @@ scp [username]@[hostname]:/var/log/[your thing id] ./backup_log
 - Identify repeating patterns, these are most likely pieces of code running in loops
 - Look for decision 'The thing is connected to the Internet.'
 
-**Report** On GitHub, in the doc folder, create a flow.md file to explain what the system does and draw a basic flow chart.
+**Report** On GitHub, in the doc folder, create a `flow.md` file to explain what the system does and draw a basic flow chart.
 Wondering what is Flowchart? Look at the example below!
 
-TODO example of flow chart including: diamond with question, square with action, arrow looping back
+TODO example of flow chart including: diamond with questions, square with actions, arrows looping back
 ![](../../assets/img/courses/id5415/module1/labxp/3_4_1.png)
 
 # Step 4: Data visualisation

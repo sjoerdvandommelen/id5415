@@ -349,4 +349,4 @@ TODO example commands
 
 **What did we achieved?**
 
-- we have a Raspberry Pi up and running, connected to the same network as the light-bul and able to control it.
+- we have a Raspberry Pi up and running, connected to the same network as the light-bulb and able to control it.
