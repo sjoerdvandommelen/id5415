@@ -21,12 +21,14 @@ TODO Full self-study
 # Sensors
 
 * [GPIO zero python library documentation](https://gpiozero.readthedocs.io/en/stable/index.html)
-* [raspberry pi interactive pinout details](https://pinout.xyz/pinout/dpi#)
+* [LightSensor class reference](https://gpiozero.readthedocs.io/en/stable/api_input.html#lightsensor-ldr)
+* [Raspberry pi interactive pinout details](https://pinout.xyz/pinout/dpi#)
+* [DHT sensor basic tutorials](https://learn.adafruit.com/dht)
+* [DHT sensor python interface documentation](https://circuitpython.readthedocs.io/projects/dht/en/latest/)
 
 # Timeseries data
 
 # Processing
-
 
 # Quiz
 

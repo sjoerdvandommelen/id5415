@@ -24,104 +24,21 @@ report:
 
 
 
+# Step 1: Do some light processing of raw sensor data
+
+## Task 1.1: Create an "environment" dashboard
+
+1. Create a new temperature property, for storing temperatures in fahrenheit 
+2. From raw celsius temperature data, convert to Fahrenheit and send this value to this new property
+3. Create a temperature dashboard with temperature in Celsius, Fahrenheit, and humidity. 
+
+# Step 2:  Explore the LightSensor Class to trigger custom events
+
+1. Besides the functions we've defined, you can adjust the threshold (and add trigger functions) directly in the [LightSensor  class](https://gpiozero.readthedocs.io/en/stable/api_input.html#lightsensor-ldr):
+   1. In your physical setup, adjust the threshold value (passed when creating the class), so that it detects internally when you pass your hand over the LDR. 
+   2. Create two new functions "hand_detected" and "no_hand_detected" , and set your LightSensor object "when_dark" and "when_light" properties to the proper function, eg: `LDR_sensor.when_dark = MyFunctionName" `
+   3. In these new functions, print a corresponding statement to your console, e.g. "Hand detected" 
+   4. Besides the print statement,   turn on the kasa lightbulb when you have detected the hand 
 
 
 
-
-```python3
-import os
-import board
-
-from dotenv import load_dotenv
-
-from dcd.entities.thing import Thing
-from time import sleep
-
-# import DHT sensor library
-from Adafruit_DHT import DHT11
-# import light sensor from GPIO0 
-from gpiozero import LightSensor # for ldr connection
-
-
-# The thing ID
-load_dotenv()
-THING_ID = os.environ['THING_ID']
-
-# Instantiate a thing with its credential
-my_thing = Thing(thing_id=THING_ID, private_key_path="/etc/ssl/certs/" + THING_ID + ".private.pem")
-
-# suing gpio pin 4 
-dht_sensor = DHT11(board.d4, use_pulseio=False)
-LDR_pin = 18
-LDR_sensor = LightSensor(LDR_pin)
-
-# Find or create a property to store light 
-my_property_ldr = my_thing.find_or_create_property("LDR sensor", "LIGHT")
-
-
-# Find or create a property to store temperature
-my_property_temp = my_thing.find_or_create_property("DHT Temperature", "TEMPERATURE")
-
-
-# Find or create a property to store humidity 
-my_property_humidity = my_thing.find_or_create_property("DHT Humidity", "RELATIVE_HUMIDITY")
-
-
-
-
-def update_light():
-
-	# calibration to LUX  needs to be done
-
-	try:
-	    lux = LDR_sensor.value # between 0 (dark) and 1 (light)
-  	    lux = lux*100 # dummy calibration
-	    my_property_ldr.update_values((lux,))	
-	except RuntimeError as error:
-	    print(error.args[0])
-	    continue
-
-	except Exception as error:
-	    raise error
-
-
-
-
-def update_temp():
-	try:
-	    temp = dht_sensor.temperature
-	    my_property_temp.update_values((temp),)	
-	except RuntimeError as error:
-	    # DHT Errors can happen fairly often
-	    print(error.args[0])
-	    continue
-
-	except Exception as error:
-	    dht_sensor.exit()
-	    raise error
-	
-
-
-def update_humidity():
-	try:
-	    humidity = dht_sensor.humidity
-	    my_property_humidity.update_values((humidity),)
-	except RuntimeError as error:
-	    # DHT Errors can happen fairly often
-	    print(error.args[0])
-	    continue
-
-	except Exception as error:
-	    dht_sensor.exit()
-	    raise error
-
-
-
-while True:
-	update_light()
-	update_temp()
-	update_humidity()
-
-	# sleep every 60 seconds
-	time.sleep(60)
-```
