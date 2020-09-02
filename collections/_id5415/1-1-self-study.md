@@ -39,6 +39,6 @@ TODO full self-study
 
 # Quiz
 
-Check your understanding with the following quiz! It is anonymous and you can try as many time as you want!
+Check your understanding with the following quiz! It is anonymous and you can try as many times as you want!
 
 <iframe width="640px" height= "600px" src= "https://forms.office.com/Pages/ResponsePage.aspx?id=TVJuCSlpMECM04q0LeCIe-EN8Fz6eUZIqbayPT_HeNhUNUFFMUxIMkxGN1Q5NFhSTDBSUTY4V0pNVS4u&embed=true" frameborder= "0" marginwidth= "0" marginheight= "0" style= "border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
