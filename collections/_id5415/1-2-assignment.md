@@ -14,8 +14,8 @@ computational_concepts: Data
 
 ---
 
-- Do not remove this line (it will not be displayed)
-  {:toc}
+* Do not remove this line (it will not be displayed)
+{:toc}
 
 ---
 
@@ -31,7 +31,7 @@ In this course, we will rely on a set of tools that we developed at IDE to keep 
 
 Here is a little tour:
 
-[![Introduction to Bucket](https://img.youtube.com/vi/H2Ogmi1J-P8/0.jpg)](https://youtu.be/H2Ogmi1J-P8 'Introduction to Bucket')
+<iframe width="560" height="400" src="https://www.youtube.com/embed/H2Ogmi1J-P8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Throughout the course, we will rely on these tools to collect and visualise data, but also to check the status of our 'Things' on the Internet.
 
@@ -49,8 +49,6 @@ Once you log into Bucket, the dashboard shows an empty page with a form to creat
 
 Following the phrasing of the Internet of Things, we've adopted this terminology to represent any physical or virtual entity that connect to the Internet and generate data. Thus, the 'Thing' that we create on Bucket is the 'digital twin' of the physical device, i.e. a virtual representation that contain data about the physical device.
 
-TODO drawing of the physical Thing and its digital twin on Bucket.
-
 Let's create a Thing for our Raspberry Pi, this little computer as part of the prototyping kit. Type in a name and a description, and select the type 'Raspberry Pi'.
 
 Many input fields appear. As setting up a Raspberry Pi in a proper way can be cumbersome, Bucket will use this information to prepare a secured disk image for you ready to use. You can burn this disk image on a memory stick and plug it into Raspberry Pi with all necessary configuration to start working.
@@ -59,7 +57,7 @@ Let's walk through these input fields and their purpose. Keep in mind that **we 
 
 The first section is about restricting access to your Raspberry Pi. As you will store network information on your Raspberry Pi, it is essential to set it up in a way that prevent others to access it.
 
-![Create Thing with WiFi Credentials that connects to the internet](/assets/img/courses/id5415/module1/assignment/1_2_21.png)
+![Create a Thing with WiFi Credentials connecting to the internet](/assets/img/courses/id5415/module1/assignment/1_2_21.png)
 
 The second section is about connecting to the network. Eduroam is an enterprise-grade network which requires several challenging interventions on the Raspberry Pi system. Filling in your NetId and password, we make sure that your Raspberry Pi can automatically connect to Eduroam and manage your credential properly. We conveniently provide a similar function for your home network.
 
@@ -249,7 +247,7 @@ To connect the light bulb to the network, we need to provision it with the WiFi 
 kasa discover
 ```
 
-![IP Address of the light bulb](../../assets/img/courses/id5415/module1/assignment/3_1_1.png)
+![IP Address of the light bulb](/assets/img/courses/id5415/module1/assignment/3_1_1.png)
 
 When the light bulb is found, at the top of the result you will note 'Host:' followed by 4 digits separated by dots. This is the IP address of the light bulb on the network, i.e. the address to send messages to it.
 
@@ -273,7 +271,7 @@ If the process works, the light bulbs blinks a couple of time, then connect to t
 kasa discover
 ```
 
-![IP Address of the light bulb after connected to local WiFi](../../assets/img/courses/id5415/module1/assignment/3_1_2.png)
+![IP Address of the light bulb after connected to local WiFi](/assets/img/courses/id5415/module1/assignment/3_1_2.png)
 
 ## Task 3.4 Interacting with the Light Bulb
 
@@ -283,7 +281,7 @@ It is now the time to explore what are the capabilities, using the [documentatio
 kasa --help
 ```
 
-![IP Address of the light bulb after connected to local WiFi](../../assets/img/courses/id5415/module1/assignment/3_1_3.png)
+![IP Address of the light bulb after connected to local WiFi](/assets/img/courses/id5415/module1/assignment/3_1_3.png)
 
 TODO a few command examples (Pending)
 
@@ -321,7 +319,7 @@ Throughout this course, we will thus access the Raspberry Pi remotely. For this 
 ssh [username]@[hostname]
 ```
 
-![](../../assets/img/courses/id5415/module1/assignment/4_2_0.png)
+![](/assets/img/courses/id5415/module1/assignment/4_2_0.png)
 
 Another way to connect to your Raspberry Pi, less convenient but often more reliable, is via its local IP Address (displayed on the Bucket web app). It is composed of 4 numbers separated by dots.
 
@@ -342,7 +340,7 @@ cd test
 
 ![Command Line tool in Pi](/assets/img/courses/id5415/module1/assignment/4_3_0.png)
 
-Now first we will create the virtual env using the same command as we did with out laptop.
+Now first we will create the virtual env using the same command as we did on our personal machine.
 
 To create a virtual environment, in the terminal type below command to create a virtual environment called `venv`.
 
@@ -356,15 +354,15 @@ And then activate this virtual environment by:
 source venv/bin/activate
 ```
 
-![Creating and Activation Virtual Environment](../../assets/img/courses/id5415/module1/assignment/4_3_1.png)
+![Creating and Activation Virtual Environment](/assets/img/courses/id5415/module1/assignment/4_3_1.png)
 
-Now install the kasa-python library to control our light buld using Raspberry-Pi. Type below command in the terminal with while our newly created virtual environment venv is activated.
+Now install the kasa-python library to control our light bulb using Raspberry Pi. Type below command in the terminal with while our newly created virtual environment venv is activated.
 
 ```bash
 pip install python-kasa --pre
 ```
 
-TODO iamage install kasa-python (pending)
+TODO image install kasa-python (pending)
 
 As we already connected the light bulb to the network, we can skip the network provisioning step.
 
@@ -376,19 +374,19 @@ First to check if the bulb is configured connected to the WiFi network, Turn ON 
 kasa discover
 ```
 
-This will show the name of our smart bulb, it's IP address, some hardware details and it's current status with device specific information.
+This will show the name of our smart bulb, its IP address, some hardware details and its current status with device-specific information.
 
 TODO Pi Terminal image with this command
 
-Now that we have IP address of the bulb, we will create and run a python script that gradually increase/decrease the brightness of the bulb in every 500 milli seconds.
+Now that we have the IP address of the bulb, we will create and run a python script that gradually increase/decrease the brightness of the bulb in every 500 milli seconds.
 
-First we will create the python scripts called `light_pi.py` in our test directory using following command. (make sure your are still in your test directory)
+First we will create the python scripts called `light_pi.py` in our test directory using the following command. (make sure your are still in your test directory)
 
 ```bash
 touch light_pi.py
 ```
 
-Now we will open this file is command line editor called `nano`. Type below command in the terminal
+Now we will open this file is command-line editor called `nano`. Type below command in the terminal
 
 ```bash
 sudo nano light_pi.py
@@ -396,6 +394,6 @@ sudo nano light_pi.py
 
 TODO example commands
 
-**What did we achieved?**
+**What did we achieve?**
 
 - we have a Raspberry Pi up and running, connected to the same network as the light-bulb and able to control it.
