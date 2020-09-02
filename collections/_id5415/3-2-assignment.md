@@ -30,7 +30,7 @@ Starting on the hardware side, this section will deal with how we can connect se
 
 Here is an overview of these pins:
 
----PIN _OVER HERE----
+![](/assets/img/courses/id5415/module3/assignment/1_0_0.png)
 
 Careful, the physical/board pin number is different from the GPIO number (e.g. physical pin 15 is GPIO22). As you use different libraries, be careful which nomenclature you're using.  For now :
 
@@ -48,9 +48,9 @@ This assignment will use 2 sensors:
 
 Mind you, you can use any general GPIO pin for these connections,
 
-For  the LDR, you will need the capacitor in your kit, and a few wires, and you can connect the circuit  in the following manner to the  pi (GPIO18:
+For  the LDR, you will need the capacitor in your kit, and a few wires, and you can connect the circuit  in the following manner to the  pi (GPIO18):
 
-TODO --- image for raspberry pi connection --- 
+![](/assets/img/courses/id5415/module3/assignment/1_1_0.png)
 
 
 
