@@ -1,11 +1,11 @@
 ---
 layout: course-page
-title: 'Assignment 1'
+title: 'Setting Up Prototyping Tools'
 permalink: /module1/assignment
 description: 'Prototyping Connected Product - Assignment 1'
 assignment-id: 1
 assignment-of: id5415-1
-introduction: Assignments is where the prototyping happens. In this first assignment, you will set up a Raspberry Pi as a connected home hub to control connected light bulbs. We will walk you through the steps while exploring the purpose of each component, incrementally drawing a product architecture.
+introduction: Assignments are where the prototyping happens. In this first assignment, you will set up a Raspberry Pi as a connected home hub to control connected light bulbs. We will walk you through the steps while exploring the purpose of each component, incrementally drawing a product architecture.
 prog_environment: Raspberry Pi
 design: Architecture
 code_management: Logs
