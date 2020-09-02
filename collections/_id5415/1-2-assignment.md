@@ -207,7 +207,7 @@ virtualenv venv
 
 VS Code recognises the creation of this new environment and ask you if you want to switch(Bottom right corner of the screen), click 'Yes'.
 
-![](/assets/img/courses/id5415/module1/assignment/2_5_1.png)
+![Prompt to switch to virtual environment](/assets/img/courses/id5415/module1/assignment/2_5_1.png)
 
 Kill the Terminal (little trashcan icon) and open a new Terminal to load this new environment. Notice the difference, the Terminal statement start with `(venv)` and the Python environment is selected in the bottom panel.
 
@@ -370,7 +370,7 @@ As we already connected the light bulb to the network, we can skip the network p
 
 Lets use some of the commands from kasa library to control the light bulb:
 
-First to check if the bulb is configured connected to the WiFi network, Turn ON the buld and type
+First to check if the bulb is configured connected to the WiFi network, Turn ON the bulb and type
 
 ```bash
 kasa discover

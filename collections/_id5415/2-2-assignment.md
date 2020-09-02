@@ -243,7 +243,7 @@ virtualenv venv
 
 VS Code recognise the creation of this new environment and ask you if you want to switch, click 'Yes'.
 
-TODO screenshot
+![Prompt to switch to virtual environment](../../assets/img/courses/id5415/module2/assignment/3_2_0.png)
 
 Kill the Terminal (little trashcan icon) and open a new Terminal to load this new environment. Notice the difference, the Terminal statement start with `(venv)` and the Python environment is selected in the bottom panel.
 
