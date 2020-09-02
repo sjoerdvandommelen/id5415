@@ -53,14 +53,13 @@ TODO drawing of the physical Thing and its digital twin on Bucket.
 
 Let's create a Thing for our Raspberry Pi, this little computer as part of the prototyping kit. Type in a name and a description, and select the type 'Raspberry Pi'.
 
-
 Many input fields appear. As setting up a Raspberry Pi in a proper way can be cumbersome, Bucket will use this information to prepare a secured disk image for you ready to use. You can burn this disk image on a memory stick and plug it into Raspberry Pi with all necessary configuration to start working.
 
 Let's walk through these input fields and their purpose. Keep in mind that **we do not store any of this information. We blend it into a Raspberry Pi image that only you, owner of the Thing you are creating, can download through a secured connection**.
 
 The first section is about restricting access to your Raspberry Pi. As you will store network information on your Raspberry Pi, it is essential to set it up in a way that prevent others to access it.
 
-![Create Thing with Wifi Credentials that connects to the internet](/assets/img/courses/id5415/module1/assignment/1_2_21.png)
+![Create Thing with WiFi Credentials that connects to the internet](/assets/img/courses/id5415/module1/assignment/1_2_21.png)
 
 The second section is about connecting to the network. Eduroam is an enterprise-grade network which requires several challenging interventions on the Raspberry Pi system. Filling in your NetId and password, we make sure that your Raspberry Pi can automatically connect to Eduroam and manage your credential properly. We conveniently provide a similar function for your home network.
 
@@ -100,7 +99,7 @@ Create a folder on your computer (i.e Desktop) to store the files for this cours
 
 ![Tour to VS Code](/assets/img/courses/id5415/module1/assignment/2_2.png)
 
-[![Getting Started with VS Code](https://img.youtube.com/vi/Sdg0ef2PpBw/0.jpg)](https://youtu.be/Sdg0ef2PpBw 'Getting Started with VS Code')
+![Getting Started with VS Code](https://youtu.be/Sdg0ef2PpBw)
 
 ## Task 2.3: Basics of a Command-line Interpreter (CLI)
 
@@ -198,7 +197,7 @@ This command should return a version number of Python 3.x.x.
 
 ## Task 2.5: Setting up Virtual Environment to work
 
-A virtual environment is a self-contained directory tree that contains a Python installation for a particular version of Python, plus a number of additional packages (modules) to meet the requirements of each python application we are developing. Different python application can use different virtual environments.
+A virtual environment is a self-contained directory tree that contains a Python installation for a particular version of Python. In addition it also include a number of additional packages (modules/libraries) to meet the requirements of each python application we are developing. Different python application can use different virtual environments.
 
 To create a virtual environment, Go to VSCode and open the terminal. Type below command to create a virtual environment called `venv`.
 
@@ -250,7 +249,7 @@ To connect the light bulb to the network, we need to provision it with the WiFi 
 kasa discover
 ```
 
-TODO screenshot result
+![IP Address of the light bulb](../../assets/img/courses/id5415/module1/assignment/3_1_1.png)
 
 When the light bulb is found, at the top of the result you will note 'Host:' followed by 4 digits separated by dots. This is the IP address of the light bulb on the network, i.e. the address to send messages to it.
 
@@ -260,7 +259,7 @@ When the light bulb is found, at the top of the result you will note 'Host:' fol
 kasa wifi scan
 ```
 
-TODO screenshot result
+TODO screenshot result (Pending)
 
 - Finally, we send a message to the light bulb with the WiFi network information. In the following command, the host is the IP address of the light bulb identified in step 3, 'wifi join' are the command and subcommand, `ioSense-net` is the SSID of the network to connect to (i.e. name of the network), the password option provision the network password and `keytype` is the category of the network.
 
@@ -274,7 +273,7 @@ If the process works, the light bulbs blinks a couple of time, then connect to t
 kasa discover
 ```
 
-TODO screenshot result
+![IP Address of the light bulb after connected to local WiFi](../../assets/img/courses/id5415/module1/assignment/3_1_2.png)
 
 ## Task 3.4 Interacting with the Light Bulb
 
@@ -284,9 +283,9 @@ It is now the time to explore what are the capabilities, using the [documentatio
 kasa --help
 ```
 
-TODO screenshot result
+![IP Address of the light bulb after connected to local WiFi](../../assets/img/courses/id5415/module1/assignment/3_1_3.png)
 
-TODO a few command examples
+TODO a few command examples (Pending)
 
 **What did we achieved?**
 
@@ -316,13 +315,13 @@ If you properly entered the details of your home network, your Raspberry Pi shou
 
 You can connect your Raspberry Pi to a screen, a keyboard and a mouse to use it as you would use your own computer. However, while prototyping your Raspberry Pi is often embedded in your setting and knowing how to handle it remotely is an important skill to have.
 
-Throughout this course, we will thus access the Raspberry Pi remotely. For this we will use the ssh command as follows. Replace the square brackets with the username and hostname that you provisioned on Bucket. Pressing enter, you will be prompt for your password. The
+Throughout this course, we will thus access the Raspberry Pi remotely. For this we will use the ssh command as follows. Replace the square brackets with the username and hostname that you provisioned on Bucket. Pressing enter, you will be prompt for your password.
 
 ```bash
 ssh [username]@[hostname]
 ```
 
-TODO Screenshot login ssh (including yes/no prompt for known hosts)
+![](../../assets/img/courses/id5415/module1/assignment/4_2_0.png)
 
 Another way to connect to your Raspberry Pi, less convenient but often more reliable, is via its local IP Address (displayed on the Bucket web app). It is composed of 4 numbers separated by dots.
 
@@ -330,20 +329,70 @@ Another way to connect to your Raspberry Pi, less convenient but often more reli
 ssh [username]@[your.local.IP.address]
 ```
 
-## Task 4.3: Controlling the Light Bulb
+## Task 4.3: Controlling the Light Bulb from Raspberry-Pi
 
 As a final task for this assignment, let's replicate what you achieved on your laptop controlling the light-bulb.
 
-On the Raspberry Pi, let's create a test directory with the command `mkdir` and navigate inside it with the command `cd`.
+On the Raspberry Pi, open the terminal and create a test directory with the command `mkdir` and navigate inside it with the command `cd`.
 
 ```bash
 mkdir test
 cd test
 ```
 
-TODO virtualenv, install kasa-python
+![Command Line tool in Pi](/assets/img/courses/id5415/module1/assignment/4_3_0.png)
 
-As we already connected the light bulb to the network, we can skip the network provisioning step. A few commands to control the light bulb:
+Now first we will create the virtual env using the same command as we did with out laptop.
+
+To create a virtual environment, in the terminal type below command to create a virtual environment called `venv`.
+
+```bash
+virtualenv venv
+```
+
+And then activate this virtual environment by:
+
+```bash
+source venv/bin/activate
+```
+
+![Creating and Activation Virtual Environment](../../assets/img/courses/id5415/module1/assignment/4_3_1.png)
+
+Now install the kasa-python library to control our light buld using Raspberry-Pi. Type below command in the terminal with while our newly created virtual environment venv is activated.
+
+```bash
+pip install python-kasa --pre
+```
+
+TODO iamage install kasa-python (pending)
+
+As we already connected the light bulb to the network, we can skip the network provisioning step.
+
+Lets use some of the commands from kasa library to control the light bulb:
+
+First to check if the bulb is configured connected to the WiFi network, Turn ON the buld and type
+
+```bash
+kasa discover
+```
+
+This will show the name of our smart bulb, it's IP address, some hardware details and it's current status with device specific information.
+
+TODO Pi Terminal image with this command
+
+Now that we have IP address of the bulb, we will create and run a python script that gradually increase/decrease the brightness of the bulb in every 500 milli seconds.
+
+First we will create the python scripts called `light_pi.py` in our test directory using following command. (make sure your are still in your test directory)
+
+```bash
+touch light_pi.py
+```
+
+Now we will open this file is command line editor called `nano`. Type below command in the terminal
+
+```bash
+sudo nano light_pi.py
+```
 
 TODO example commands
 

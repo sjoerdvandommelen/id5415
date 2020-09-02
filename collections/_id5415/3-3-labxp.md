@@ -18,6 +18,16 @@ report:
 
 ---
 
+
+
+
+
+
+
+
+
+
+
 ```python3
 import os
 import board
@@ -33,7 +43,7 @@ from Adafruit_DHT import DHT11
 from gpiozero import LightSensor # for ldr connection
 
 
-# The thing ID and access token
+# The thing ID
 load_dotenv()
 THING_ID = os.environ['THING_ID']
 
@@ -66,7 +76,7 @@ def update_light():
 	try:
 	    lux = LDR_sensor.value # between 0 (dark) and 1 (light)
   	    lux = lux*100 # dummy calibration
-	    my_property_cpu.update_values((lux,))	
+	    my_property_ldr.update_values((lux,))	
 	except RuntimeError as error:
 	    print(error.args[0])
 	    continue
