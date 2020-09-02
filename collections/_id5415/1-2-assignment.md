@@ -21,15 +21,16 @@ We have prepared 5 steps for this assignment (each again divided into specific t
 
 ---
 
-<iframe width="560" height="400" src="https://www.youtube.com/embed/H2Ogmi1J-P8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 # Step 1: Set up your cloud and prepare a configuration for your Raspberry Pi
 
-A core component of the technology stack of IoT is the `cloud': the location somewhere on the internet where we keep the data we want to use and the tools that determine how we will use this data. It will not be until module 5 before we actually start using could data and tools in the assignments. However, in this first assignment we will prepare for that by setting up the cloud.
+A core component of the technology stack of IoT is the `cloud': the location somewhere on the internet where we keep the data we want to use and the tools that determine how we will use this data. It will not be until module 5 before we start using could data and tools in the assignments. However, in this first assignment, we will prepare for that by setting up the cloud.
 
 ## Task 1.1 Activate your space in 'Bucket".
 
-Our Data-Centric Design Lab (DCD Lab) has prepared a space online where it is easy for the students in this course to create their cloud. It is called [Bucket](https://dwd.tudelft.nl/bucket) and [here](https://youtu.be/H2Ogmi1J-P8 'Introduction to Bucket') you can find a little tour to familiarize yourself with Bucket. To access and use it, you will create your DCD Lab account. Use your TU email.
+Our Data-Centric Design Lab (DCD Lab) has prepared a space online where it is easy for the students in this course to create their cloud. It is called [Bucket](https://dwd.tudelft.nl/bucket). The following video gives you a little tour to familiarize yourself with Bucket. To access and use it, you will create your DCD Lab account.
+
+<iframe width="560" height="400" src="https://www.youtube.com/embed/H2Ogmi1J-P8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Task 1.2 Setup your Raspberry Pi as a Thing in your cloud and create a Disk Image
 
@@ -263,7 +264,7 @@ TODO a few command examples (Pending)
 
 - we are able to control the connected light bulb from our computer
 
-# Step 4: Setup Up a Raspberry Pi as Home Hub
+# Step 4: Set yp a Raspberry Pi as Home Hub
 
 What is a Raspberry Pi, in contrast with an Arduino-like device? Here is a comparison, opposing a ['Microprocessor' and a 'microcontroller'](https://www.youtube.com/watch?v=7vhvnaWUZjE). Why do we use another computer rather than our own machine? Throughout the course, you will also test your code on your machine. However, when prototyping connected products, you want them to be connected over time, especially for a home hub, and not depending on your laptop activity (e.g. closing the lead, moving out of the house). The Raspberry Pi can be permanently connected and serve its purpose. Besides, it also makes a device on which we can set up network access, enabling your laptop, your phone and other devices to interact with it.
 
