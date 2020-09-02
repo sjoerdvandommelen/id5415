@@ -49,8 +49,6 @@ Once you log into Bucket, the dashboard shows an empty page with a form to creat
 
 Following the phrasing of the Internet of Things, we've adopted this terminology to represent any physical or virtual entity that connect to the Internet and generate data. Thus, the 'Thing' that we create on Bucket is the 'digital twin' of the physical device, i.e. a virtual representation that contain data about the physical device.
 
-TODO drawing of the physical Thing and its digital twin on Bucket.
-
 Let's create a Thing for our Raspberry Pi, this little computer as part of the prototyping kit. Type in a name and a description, and select the type 'Raspberry Pi'.
 
 Many input fields appear. As setting up a Raspberry Pi in a proper way can be cumbersome, Bucket will use this information to prepare a secured disk image for you ready to use. You can burn this disk image on a memory stick and plug it into Raspberry Pi with all necessary configuration to start working.
@@ -59,7 +57,7 @@ Let's walk through these input fields and their purpose. Keep in mind that **we 
 
 The first section is about restricting access to your Raspberry Pi. As you will store network information on your Raspberry Pi, it is essential to set it up in a way that prevent others to access it.
 
-![Create Thing with WiFi Credentials that connects to the internet](/assets/img/courses/id5415/module1/assignment/1_2_21.png)
+![Create a Thing with WiFi Credentials connecting to the internet](/assets/img/courses/id5415/module1/assignment/1_2_21.png)
 
 The second section is about connecting to the network. Eduroam is an enterprise-grade network which requires several challenging interventions on the Raspberry Pi system. Filling in your NetId and password, we make sure that your Raspberry Pi can automatically connect to Eduroam and manage your credential properly. We conveniently provide a similar function for your home network.
 

@@ -22,7 +22,3 @@ TODO Full self-study
 
 
 # Selection Criteria
-
-# Live Session
-
-# Coaching Session

@@ -25,9 +25,3 @@ TODO Full self-study
 
 
 # Privacy
-
-
-
-# Live Session
-
-# Coaching Session

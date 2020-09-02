@@ -20,7 +20,7 @@ computational_concepts: I/O, files
 
 ---
 
-In this assignment we will begin making more *interactive* prototypes, with the use of sensor data, bucket, and some simple data processing.   
+In this assignment, we will make our prototype more aware of its context, with the use of sensor data, bucket, and some simple data processing.   
 
 #  Step 1 GPIO and Sensors
 
@@ -50,13 +50,13 @@ Mind you, you can use any general GPIO pin for these connections,
 
 For  the LDR, you will need the capacitor in your kit, and a few wires, and you can connect the circuit  in the following manner to the  pi (GPIO18:
 
---- image for raspberry pi connection --- 
+TODO --- image for raspberry pi connection --- 
 
 
 
 Next, for the DHT, you will need a 10kΩ resistor , some wires, and can connect it like so (GPIO  4): 
 
----- img for pi connection ----
+TODO ---- img for pi connection ----
 
 
 
@@ -142,7 +142,7 @@ To do this, use the python function "print()" 3 times,  together with each of th
 
 At this step, we should now have working sensors (and some data)!  Now we need to structure our data collection, 
 
-do some basic processing,  and send this data to bucket. 
+do some basic processing,  and send this data to Bucket. 
 
 
 
@@ -168,8 +168,6 @@ def update_temperature():
     	# this means there is a problem with the actual sensor
 	    dht_sensor.exit() # close dht sensor, this statement is not needed if you're using the LDR
 	    raise error # this will crash the program 
-    
-  
 ```
 
 
@@ -179,10 +177,9 @@ Now, we can create a main function  and call this `update_temperature()` functio
 We can do the same creation process for the two other sensors (you can keep the except blocks the same in the try statement, but be sure to update for the proper sensor read instruction!)
 
 
+## Task 2.2 Send your sensor data to Bucket using the DCD SDK
 
-## Task  2.2 Send your sensor data to bucket using the DCD sdk
-
-Following the example of the previous assignments, you can now add the sdk libraries (in the beginning of your script, for clarity) you will need : 
+Following the example of the previous assignments, you can now add the SDK libraries (in the beginning of your script, for clarity) you will need : 
 
 ```python
 import os 
@@ -196,7 +193,7 @@ from time import sleep # so we can sleep for a set amount of time
 
 ### Task 2.2.1 Create thing and property objects
 
-We  can  now create a new thing in bucket, or use the one already used for the raspberry pi, instantiate it in our python script, and create 3 new properties in it, one for each sensor.  First, let's add our THING_ID variable , and create our thing object in python ( let's do this right between our sensor objects and our update functions, can you guess why we are doing it before our update functions?)
+We  can  now create a new thing in Bucket, or use the one already used for the raspberry pi, instantiate it in our python script, and create 3 new properties in it, one for each sensor.  First, let's add our THING_ID variable , and create our thing object in python ( let's do this right between our sensor objects and our update functions, can you guess why we are doing it before our update functions?)
 
 ```python
 # library imports and sensor object creation
@@ -229,13 +226,13 @@ my_property_humidity = my_thing.find_or_create_property("DHT Humidity", "RELATIV
 
 
 
-### Task 2.2.2 Send updated sensor data to bucket 
+### Task 2.2.2 Send updated sensor data to Bucket 
 
 
 
-We now need to send this data to bucket. All this data is one dimensional, which means each time you have an update you only have to send 1 data point to bucket.  for any one dimensional property, remember that you can update its value with this following instruction structure : `my_property.update_values((my_new_value),)	 `
+We now need to send this data to Bucket. All this data is one dimensional, which means each time you have an update you only have to send 1 data point to Bucket.  for any one dimensional property, remember that you can update its value with this following instruction structure : `my_property.update_values((my_new_value),)	 `
 
-Now, where would be a good place to add this instruction?  The update functions we made previously, of course!  Instead of printing the new value to the console, we can just send it to bucket (of course you can also do both). 
+Now, where would be a good place to add this instruction?  The update functions we made previously, of course!  Instead of printing the new value to the console, we can just send it to Bucket (of course you can also do both). 
 
 For example in the LDR update function we can have:
 
@@ -259,7 +256,7 @@ You can see that in this case, we've done a bit of dummy processing to our raw d
 
 
 
-You should now be able to see your data in grafana!  We will do one last thing - make our script update our values every 2 seconds, forever! This is simple, we can create an infinite while loop inside our main function, call our update functions in series, and wait for 2 seconds with sleep: 
+You should now be able to see your data in Grafana!  We will do one last thing - make our script update our values every 2 seconds, forever! This is simple, we can create an infinite while loop inside our main function, call our update functions in series, and wait for 2 seconds with sleep: 
 
 ```python
 while True:
@@ -273,7 +270,7 @@ while True:
 
 # Step 3 Events and Actions
 
-Oof, almost done now! Now we have a periodic stream of data - a timeseries (3 in fact).  The light pre-processing we have done (e.g. fake lux) happens whenever we get a data point, but we want to be able to trigger actions given certain conditions. 
+Oof, almost done now! Now we have a periodic stream of data - a time-series (3 in fact).  The light pre-processing we have done (e.g. fake lux) happens whenever we get a data point, but we want to be able to trigger actions given certain conditions. 
 
 Let's define a simple event and action pair: let's say we want to detect when the room lights where our pi is in get turned on/off.   
 
@@ -297,7 +294,7 @@ def is_light_on(new_value,threshold = 10):
 
 
 
-Note that you can call is_light_on like so: `is_light_on(lux)`, because the threshold by default is 10. if you want to specify it, you can do so aswell: `is_light_on(lux, new_threshold)`. 
+Note that you can call is_light_on like so: `is_light_on(lux)`, because the threshold by default is 10. if you want to specify it, you can do so as well: `is_light_on(lux, new_threshold)`. 
 
 From this,  can you create a function to trigger when its off?  Can you merge these two functions in one?  
 

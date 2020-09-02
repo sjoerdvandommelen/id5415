@@ -46,11 +46,3 @@ This Why and What help us understand the relevance of Python in this course. To 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/w3jLJU7DT5E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <iframe width="640px" height= "480px" src= "https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAANAASYlx1BUQ1FONlhLVUVTUzlOQlczOUFMR1pJQlVERy4u&embed=true" frameborder= "0" marginwidth= "0" marginheight= "0" style= "border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
-
-# Live Session
-
-In this sand pit, we play with the basic programming concept in Python. We will walk you through the work flow of collaborating with Git and GitHub.
-
-# Coaching Session
-
-This will be the first group session with your coach. You will receive feedback what you reported on your GitHub repository.

@@ -26,10 +26,3 @@ TODO Full self-study
 # Timeseries data
 
 # Processing
-
-# Live Session
-
-In this sand pit, we will write some Python code to collect data from sensors.
-
-
-# Coaching Session

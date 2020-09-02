@@ -32,15 +32,7 @@ TODO full self-study
 
 # Internet of Things' Technology Stack
 
-<iframe width="560" src="https://www.youtube.com/embed/kSxxUuC8njY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="400" src="https://www.youtube.com/embed/kSxxUuC8njY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 # Documenting
 
-
-# Sandpit
-
-In this sand pit, we will demonstrate the basic functionalities of the kit that you will use throughout the course. We will discuss functional prototyping, connected product and the IoT's Technology stack in this context.
-
-# Coaching Session
-
-The first coaching session will be a matchmaking event. It will take place both on-campus and online

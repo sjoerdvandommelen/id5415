@@ -28,9 +28,3 @@ TODO Full self-study
 
 
 # Fundamental of web security
-
-
-
-# Live Session
-
-# Coaching Session
