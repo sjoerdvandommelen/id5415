@@ -31,7 +31,7 @@ In this course, we will rely on a set of tools that we developed at IDE to keep 
 
 Here is a little tour:
 
-[![Introduction to Bucket](https://img.youtube.com/vi/H2Ogmi1J-P8/0.jpg)](https://youtu.be/H2Ogmi1J-P8 'Introduction to Bucket')
+<iframe width="560" height="400" src="https://youtu.be/H2Ogmi1J-P8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Throughout the course, we will rely on these tools to collect and visualise data, but also to check the status of our 'Things' on the Internet.
 
