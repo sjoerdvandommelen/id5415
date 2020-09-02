@@ -14,12 +14,12 @@ computational_concepts:
 
 ---
 
-- Do not remove this line (it will not be displayed)
-  {:toc}
+* Do not remove this line (it will not be displayed)
+{:toc}
 
 ---
 
-In the previous module we setup a prototyping environment and we explored the behaviour of a default Python mudules (kasa) running on the Raspberry Pi. It is time to start coding and define ourself this behaviour.
+In the previous module we setup a prototyping environment and we explored the behaviour of a default Python modules (kasa) running on the Raspberry Pi. It is time to start coding and define ourself this behaviour.
 
 # Step 1: Git Flow
 
@@ -29,19 +29,19 @@ You got acquainted to
 
 To get your shared repository on your machine, we use 'git clone' with the URL to your repository. You can find this URL on the GitHub page of your repository. Click on the green drop down button 'Code' and copy the URL.
 
-![Copy the git Repository Link](../../assets/img/courses/id5415/module2/assignment/1_1_0.png)
+![Copy the git Repository Link](/assets/img/courses/id5415/module2/assignment/1_1_0.png)
 
 In VS Code you can click on the Source Control button (3rd icon in the left panel) and 'clone repository'.
 
-![Clone Git Repository](../../assets/img/courses/id5415/module2/assignment/1_1_1.png)
+![Clone Git Repository](/assets/img/courses/id5415/module2/assignment/1_1_1.png)
 
 In the text field that open at the top, paste the URL of your repository and press ENTER.
 
-![Text Field appear on top to paste repo link](../../assets/img/courses/id5415/module2/assignment/1_1_2.png)
+![Text Field appear on top to paste repo link](/assets/img/courses/id5415/module2/assignment/1_1_2.png)
 
 You now have a copy of your team repository on your machine. In the left panel you will recognise the tree of files and directories, including the doc,src and README.md.
 
-![Cloned Repository on your machine](../../assets/img/courses/id5415/module2/assignment/1_1_3.png)
+![Cloned Repository on your machine](/assets/img/courses/id5415/module2/assignment/1_1_3.png)
 
 ## Task 1.2 Edit your files
 
@@ -57,27 +57,27 @@ Then, open the README.md and edit the Contributor section to show the profile pi
 
 The README.md file appears now in a yellow font: it has been modified.
 
-![Editing ReadMe file from VSCode](../../assets/img/courses/id5415/module2/assignment/1_2_0.png)
+![Editing ReadMe file from VSCode](/assets/img/courses/id5415/module2/assignment/1_2_0.png)
 
 ## Task 1.3 Stage and Commit Changes
 
-We can now prepare our files for a new version. We select the changes we want in this new version. This is called 'staging'. Click on the `+` icon next to each file in github source control button on.
+We can now prepare our files for a new version. We select the changes we want in this new version. This is called 'staging'. Click on the `+` icon next to each file in GitHub source control button on.
 
-![Staging file changes](../../assets/img/courses/id5415/module2/assignment/1_3_0.png)
+![Staging file changes](/assets/img/courses/id5415/module2/assignment/1_3_0.png)
 
-After staging the changes, we will add small description about the changes and create a new version of the git repository by pressing 'right tick mark'. This step is call `Committing`. We are commiting our changes in a local repository (in your own machine only) and create a snapshot of the entire project directory (locally) with new changes. Later we can move back and revert the changes we want.
+After staging the changes, we will add a small description about the changes and create a new version of the git repository by pressing 'right tick mark'. This step is call `Committing`. We are committing our changes in a local repository (in your own machine only) and create a snapshot of the entire project directory (locally) with new changes. Later we can move back and revert the changes we want.
 
-![Commiting changes](../../assets/img/courses/id5415/module2/assignment/1_3_1.png)
+![Commiting changes](/assets/img/courses/id5415/module2/assignment/1_3_1.png)
 
 ## Task 1.4 Synchronize (Pull/Push)
 
-Till now we have staged all our changes and created a snapshot of the entire directory in our local machine. However none of your teammate can actually see this changes yet. (why? can you think of?) Because, we did commit the changes locally but did not push(upload) all the changes into remote repository on github yet. Remote repository is the one you cloned from Github website (using git clone) in the first step.
+Till now we have staged all our changes and created a snapshot of the entire directory in our local machine. However none of your teammates can actually see these changes yet. (why? can you think of?) Because, we did commit the changes locally but did not push (upload) all the changes on the remote repository on GitHub yet. The remote repository is the one you cloned from Github website (using git clone) in the first step.
 
 At the same time we also need to pull(download) all the changes that other teammates have pushed into the remote repository.
 
 We can do this both steps together in VSCode by pressing the 'Synchronize' button left corner. (However before pressing this button, make sure you staged and commit all your changes).
 
-[Synchronize remote changes](../../assets/img/courses/id5415/module2/assignment/1_4_0.png)
+[Synchronize remote changes](/assets/img/courses/id5415/module2/assignment/1_4_0.png)
 
 Clicking on this button triggers three actions:
 
@@ -85,19 +85,19 @@ Clicking on this button triggers three actions:
 - it 'merges' this version with the local version
 - it 'pushes' the new, merged version on GitHub
 
-If everything went well, all your changes will be pushed to remote repository and new changes from your teammates will be pulled from the remote repository at the same time.
+If everything went well, all your changes will be pushed to the remote repository and new changes from your teammates will be pulled from the remote repository at the same time.
 
-However, if the merge does not succeed automatically, it prompt you to let you choose, for each conflicting block of code, which one to keep (your's, your teammate's or both). This called 'conflict'. To resolve the conflict you can decide what final code you want to keep. Either you can accept all incoming changes(your teammates) or outgoing changes(yours) or merge from both side or compare changes from each side and keep the one you want and commit and push again your merged changes.
+However, if the merge does not succeed automatically, it prompt you to let you choose, for each conflicting block of code, which one to keep (your's, your teammate's or both). This called 'conflict'. To resolve the conflict you can decide what final code you want to keep. Either you can accept all incoming changes(your teammates) or outgoing changes(yours) or merge from both sides or compare changes from each side and keep the one you want and commit and push again your merged changes.
 
 Read the scenario and see the image below to understand more clearly:
 
-Assume you have changed ReadME file and committed locally. Meanwhile one of your teammates changed the same file and committed and pushed over the Remote repository. However you did not pulled those changes yet from yor teammates and you're trying to push your changes. At this point VSCode will give you a prompt to resolve the conflict.
+Assume you have changed ReadME file and committed locally. Meanwhile, one of your teammates changed the same file and committed and pushed over the Remote repository. However, you did not pull those changes yet from your teammates and you are trying to push your changes. At this point, VS Code will give you a prompt to resolve the conflict.
 
-[Resolve Conflicts](../../assets/img/courses/id5415/module2/assignment/1_4_1.png)
+[Resolve Conflicts](/assets/img/courses/id5415/module2/assignment/1_4_1.png)
 
-After you decide and accept the either changes, you again have to commit this changes and push to the local repository.
+After you decide and accept either version, you again have to commit these changes and push to the local repository.
 
-[Commit and Push merged conflicts](../../assets/img/courses/id5415/module2/assignment/1_4_2.png)
+[Commit and Push merged conflicts](/assets/img/courses/id5415/module2/assignment/1_4_2.png)
 
 ## Task 1.5 Create a Branch
 
@@ -106,21 +106,21 @@ As every team member start making larger contributions to the repository, we can
 - Commit your code as often as possible. The smaller the versions, the greater chances of a successful automatic merge. (As mentioned in Task 1.4)
 - Create separate branches for your different application features.
 
-TODO In Git, a branch is a copy of your another git repository brach with all the commits included(e.g. master). In this copied branch, we can start working without worrying about deleting/editing content from the main branch but commit our changes to the copy of the new branch. Later once the changes are finish we can merge this copied branch back to master.
+In Git, a branch is a copy of your another git repository brach with all the commits included(e.g. master). In this copied branch, we can start working without worrying about deleting/editing content from the main branch but commit our changes to the copy of the new branch. Later once the changes are finish we can merge this copied branch back to master.
 
-Let's try to understand this by first creating a first branch from the master branch.
+Let's try to understand this by first creating a branch from the master branch.
 
 By default, you are on the `master` branch. In VS Code you can create a branch by clicking on the bottom left corner on 'master' (the name of your current branch). A menu pops up, click `Create a new branch from`. In the text field, provide the name of your new feature, e.g. 'feature/john-python-exploration'. Then select the branch 'master' (your branch will copied from the current master branch).
 
-![Creating new git branch](../../assets/img/courses/id5415/module2/assignment/1_9.png)
+![Creating new git branch](/assets/img/courses/id5415/module2/assignment/1_9.png)
 
-Once you have successfully created the new branch, you will see that you are now working from your newely created branch and not master branch.
+Once you have successfully created the new branch, you will see that you are now working from your newly created branch and not master branch.
 
-![Working from new branch](../../assets/img/courses/id5415/module2/assignment/1_10.png)
+![Working from new branch](/assets/img/courses/id5415/module2/assignment/1_10.png)
 
-You can always switch back to another branch (e.g master) to look for reference or edit some code. **NOTE make sure you have commit all the changes from current branch before switching to new one.**
+You can always switch back to another branch (e.g master) to look for reference or edit some code. **NOTE make sure you have commit all the changes from the current branch before switching to the new one.**
 
-![Switch working branch](../../assets/img/courses/id5415/module2/assignment/1_11.png)
+![Switch working branch](/assets/img/courses/id5415/module2/assignment/1_11.png)
 
 A more complete tutorial on branches is available by [Atlassian](https://www.atlassian.com/git/tutorials/using-branches).
 
@@ -130,18 +130,18 @@ Now each team member can explore Python in there own branch, committing new vers
 
 ## Task 2.1 Create a Python Script
 
-We write Python code into files with `.py` extension. Let's create a new file `light.py` in the src directory.To create a new file, right click on the `src` folder and select the fist option said `New File`. you will see that in file explorer a new text field will ask you to give name to this new file. Write `light.py` there.
+We write Python code into files with `.py` extension. Let's create a new file `light.py` in the src directory.To create a new file, right-click on the `src` folder and select the fist option said `New File`. you will see that in file explorer a new text field will ask you to give a name to this new file. Write `light.py` there.
 
-![Create a new python script file](../../assets/img/courses/id5415/module2/assignment/1_12.png)
+![Create a new python script file](/assets/img/courses/id5415/module2/assignment/1_12.png)
 
-Paste the following lines in the newely created python script file `light.py`
+Paste the following lines in the newly created python script file `light.py`
 
 ```python
 # This function 'print' the message 'The light is on!' in the Terminal
 print("The light is on!")
 ```
 
-## Task 2.2: Executing a Python script from terminal
+## Task 2.2: Executing a Python script from the Terminal
 
 In the terminal, use the python command followed by the path to your file to execute your Python script:
 
@@ -157,9 +157,9 @@ The second line is a function call. The function `print()` displays a message in
 
 # Task 2.3 Variables and Types (Data Types)
 
-In programming, a variable is a storage location paired with associated symbolic name. Each of variable holds value that either static or varies over time when program runs.
+In programming, a variable is a storage location paired with an associated symbolic name. Each of the variables holds a value that either static or varies over time when the program runs.
 
-The value stored in this variable can have different types. e.g. numerical value, a "string" value, boolean,or an list that holds multiple value in one variable.
+The value stored in this variable can have different types. e.g. numerical value, a "string" value, boolean, or a list that holds multiple values in one variable.
 
 Let's look at the two simple example code below for numerical value and string value!
 
@@ -188,7 +188,7 @@ print (full_name)
 
 In the previous(assignment 1) we wrote the minimal code enabling the control of the light bulb from Python.
 
-In next step, you will see the names `bulb` and `result` in one the line in python script. These are the names of 2 variables.
+In the next step, you will see the names `bulb` and `result` in one the line in python script. These are the names of 2 variables.
 
 ## Task
 

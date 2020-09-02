@@ -12,8 +12,8 @@ report: System Architecture, System Data Visualisation
 
 ---
 
-- Do not remove this line (it will not be displayed)
-  {:toc}
+* Do not remove this line (it will not be displayed)
+{:toc}
 
 ---
 
@@ -41,7 +41,7 @@ Markdown is a markup language to quickly format text. This is the language used 
 
 On GitHub, edit the `README.md` (`.md` for MarkDown).
 
-![](../../assets/img/courses/id5415/module1/labxp/1_2_1.png)
+![](/assets/img/courses/id5415/module1/labxp/1_2_1.png)
 
 The README.md file is the first document to show up when reaching your repository. Let's give it a personalised touch. Hash `#` signs are used for headers. Create a contributors' section and list the name and 1-sentence bio of your team members.
 
@@ -55,9 +55,9 @@ The README.md file is the first document to show up when reaching your repositor
 
 You can preview your changes, then press the green button 'Commit changes' to save (more on this terminology in assignment 2).
 
-![](../../assets/img/courses/id5415/module1/labxp/1_2_2.png)
+![](/assets/img/courses/id5415/module1/labxp/1_2_2.png)
 
-You can add tables, images, links and so on with similar tags. We now set a introduction image. Click on the 'doc' folder then 'images'. Click on the drop-down menu Add File > Upload files and drag and drop your image. Once again, press the green button 'Commit changes' to save (this can take a while).
+You can add tables, images, links and so on with similar tags. We now set an introduction image. Click on the 'doc' folder then 'images'. Click on the drop-down menu Add File > Upload files and drag and drop your image. Once again, press the green button 'Commit changes' to save (this can take a while).
 
 Back to your README.md, type in the following at the top of the file (replace projectbanner.png by the name of your file):
 
@@ -65,7 +65,7 @@ Back to your README.md, type in the following at the top of the file (replace pr
 ![Project Banner](doc/images/projectbanner.png)
 ```
 
-![](../../assets/img/courses/id5415/module1/labxp/1_2_3.png)
+![](/assets/img/courses/id5415/module1/labxp/1_2_3.png)
 
 A cheat sheet of Markdown can be found [here](https://www.markdownguide.org/cheat-sheet/)
 
@@ -146,7 +146,7 @@ Our Python script store logs in a different file every day to make it easier to 
 cat 2020-08-24.log
 ```
 
-![](../../assets/img/courses/id5415/module1/labxp/3_2_1.png)
+![](/assets/img/courses/id5415/module1/labxp/3_2_1.png)
 
 ## Task 3.3: Downloading Logs
 
@@ -168,7 +168,7 @@ scp [username]@[hostname]:/var/log/[your thing id] ./backup_log
 Wondering what is Flowchart? Look at the example below!
 
 TODO example of flow chart including: diamond with questions, square with actions, arrows looping back
-![](../../assets/img/courses/id5415/module1/labxp/3_4_1.png)
+![](/assets/img/courses/id5415/module1/labxp/3_4_1.png)
 
 # Step 4: Data visualisation
 

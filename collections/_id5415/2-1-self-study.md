@@ -11,8 +11,8 @@ introduction: In this module, the self-study material focus on the fundamentals 
 
 ---
 
-- Do not remove this line (it will not be displayed)
-  {:toc}
+* Do not remove this line (it will not be displayed)
+{:toc}
 
 ---
 

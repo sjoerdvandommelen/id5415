@@ -14,8 +14,8 @@ computational_concepts: Data
 
 ---
 
-- Do not remove this line (it will not be displayed)
-  {:toc}
+* Do not remove this line (it will not be displayed)
+{:toc}
 
 ---
 
@@ -249,7 +249,7 @@ To connect the light bulb to the network, we need to provision it with the WiFi 
 kasa discover
 ```
 
-![IP Address of the light bulb](../../assets/img/courses/id5415/module1/assignment/3_1_1.png)
+![IP Address of the light bulb](/assets/img/courses/id5415/module1/assignment/3_1_1.png)
 
 When the light bulb is found, at the top of the result you will note 'Host:' followed by 4 digits separated by dots. This is the IP address of the light bulb on the network, i.e. the address to send messages to it.
 
@@ -273,7 +273,7 @@ If the process works, the light bulbs blinks a couple of time, then connect to t
 kasa discover
 ```
 
-![IP Address of the light bulb after connected to local WiFi](../../assets/img/courses/id5415/module1/assignment/3_1_2.png)
+![IP Address of the light bulb after connected to local WiFi](/assets/img/courses/id5415/module1/assignment/3_1_2.png)
 
 ## Task 3.4 Interacting with the Light Bulb
 
@@ -283,7 +283,7 @@ It is now the time to explore what are the capabilities, using the [documentatio
 kasa --help
 ```
 
-![IP Address of the light bulb after connected to local WiFi](../../assets/img/courses/id5415/module1/assignment/3_1_3.png)
+![IP Address of the light bulb after connected to local WiFi](/assets/img/courses/id5415/module1/assignment/3_1_3.png)
 
 TODO a few command examples (Pending)
 
@@ -321,7 +321,7 @@ Throughout this course, we will thus access the Raspberry Pi remotely. For this 
 ssh [username]@[hostname]
 ```
 
-![](../../assets/img/courses/id5415/module1/assignment/4_2_0.png)
+![](/assets/img/courses/id5415/module1/assignment/4_2_0.png)
 
 Another way to connect to your Raspberry Pi, less convenient but often more reliable, is via its local IP Address (displayed on the Bucket web app). It is composed of 4 numbers separated by dots.
 
@@ -342,7 +342,7 @@ cd test
 
 ![Command Line tool in Pi](/assets/img/courses/id5415/module1/assignment/4_3_0.png)
 
-Now first we will create the virtual env using the same command as we did with out laptop.
+Now first we will create the virtual env using the same command as we did on our personal machine.
 
 To create a virtual environment, in the terminal type below command to create a virtual environment called `venv`.
 
@@ -356,39 +356,39 @@ And then activate this virtual environment by:
 source venv/bin/activate
 ```
 
-![Creating and Activation Virtual Environment](../../assets/img/courses/id5415/module1/assignment/4_3_1.png)
+![Creating and Activation Virtual Environment](/assets/img/courses/id5415/module1/assignment/4_3_1.png)
 
-Now install the kasa-python library to control our light buld using Raspberry-Pi. Type below command in the terminal with while our newly created virtual environment venv is activated.
+Now install the kasa-python library to control our light bulb using Raspberry Pi. Type below command in the terminal with while our newly created virtual environment venv is activated.
 
 ```bash
 pip install python-kasa --pre
 ```
 
-TODO iamage install kasa-python (pending)
+TODO image install kasa-python (pending)
 
 As we already connected the light bulb to the network, we can skip the network provisioning step.
 
 Lets use some of the commands from kasa library to control the light bulb:
 
-First to check if the bulb is configured connected to the WiFi network, Turn ON the buld and type
+First to check if the bulb is configured connected to the WiFi network, Turn ON the bulb and type
 
 ```bash
 kasa discover
 ```
 
-This will show the name of our smart bulb, it's IP address, some hardware details and it's current status with device specific information.
+This will show the name of our smart bulb, its IP address, some hardware details and its current status with device-specific information.
 
 TODO Pi Terminal image with this command
 
-Now that we have IP address of the bulb, we will create and run a python script that gradually increase/decrease the brightness of the bulb in every 500 milli seconds.
+Now that we have the IP address of the bulb, we will create and run a python script that gradually increase/decrease the brightness of the bulb in every 500 milli seconds.
 
-First we will create the python scripts called `light_pi.py` in our test directory using following command. (make sure your are still in your test directory)
+First we will create the python scripts called `light_pi.py` in our test directory using the following command. (make sure your are still in your test directory)
 
 ```bash
 touch light_pi.py
 ```
 
-Now we will open this file is command line editor called `nano`. Type below command in the terminal
+Now we will open this file is command-line editor called `nano`. Type below command in the terminal
 
 ```bash
 sudo nano light_pi.py
@@ -396,6 +396,6 @@ sudo nano light_pi.py
 
 TODO example commands
 
-**What did we achieved?**
+**What did we achieve?**
 
 - we have a Raspberry Pi up and running, connected to the same network as the light-bulb and able to control it.
