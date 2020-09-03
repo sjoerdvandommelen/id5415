@@ -10,7 +10,8 @@
 	.st4{font-size:36px;}
 	.st5{enable-background:new    ;}
 	.st6{font-size:48px;}
-	.st7{fill:#66CC66;}
+	.st7{font-size:21px;}
+	.st8{fill:#66CC66;}
 </style>
 <g>
 	<rect x="425" y="46" class="st0" width="347" height="458"/>
@@ -50,7 +51,7 @@
 <text transform="matrix(1 0 0 1 1571.6304 262)" class="st5"><tspan x="0" y="0" class="st3 st6">Assignment /</tspan><tspan x="48.2" y="57.6" class="st3 st6">Lab XP </tspan></text>
 <text transform="matrix(1 0 0 1 1624.7417 783.1757)" class="st3 st6">Lab XP</text>
 <text transform="matrix(1 0 0 1 147.7975 130.1935)" class="st5"><tspan x="0" y="0" class="st3 st6">Self-Study</tspan><tspan x="9" y="57.6" class="st3 st6">Materials</tspan></text>
-<text transform="matrix(1 0 0 1 131.6941 405.7332)" class="st3 st6">Live Session</text>
+<text transform="matrix(1 0 0 1 131.6941 381.7329)" class="st5"><tspan x="0" y="0" class="st3 st6">Live Session</tspan><tspan x="74.3" y="25.2" class="st3 st7">(Online)</tspan></text>
 <g>
 	<rect x="63" y="544" class="st1" width="347" height="216"/>
 </g>
@@ -73,13 +74,21 @@
 	<rect x="63" y="783.8" class="st0" width="347" height="216"/>
 </g>
 <text transform="matrix(1 0 0 1 136.9263 658.5266)" class="st3 st6">Assignment</text>
-<text transform="matrix(1 0 0 1 71.9816 1138.3538)" class="st5"><tspan x="0" y="0" class="st3 st6">Coaching</tspan><tspan x="4.7" y="57.6" class="st3 st6">Sessions</tspan></text>
+<text transform="matrix(1 0 0 1 71.9816 1138.3538)" class="st5"><tspan x="0" y="0" class="st3 st6">Coaching</tspan><tspan x="4.7" y="57.6" class="st3 st6">Sessions</tspan><tspan x="0.6" y="82.8" class="st3 st7">(Online/On-Campus)</tspan></text>
 <g>
 	<rect x="236.5" y="1042" class="st1" width="173.5" height="216"/>
 </g>
 <text transform="matrix(0.7071 0.7071 -0.7071 0.7071 245.7543 1091.2727)" class="st3 st6">Assignment</text>
-<rect x="15.4" y="544" class="st7" width="35.3" height="714"/>
+<rect x="15.4" y="544" class="st8" width="35.3" height="714"/>
 <text transform="matrix(1.633974e-07 -1 1 1.633974e-07 50.7252 1069.5853)" class="st3 st6">Technical Support</text>
-<rect x="1870.3" y="48.7" class="st7" width="33.2" height="953.3"/>
+<rect x="1870.3" y="48.7" class="st8" width="33.2" height="953.3"/>
 <text transform="matrix(1.633974e-07 -1 1 1.633974e-07 1903.4443 725.4438)" class="st3 st6">Technical Support</text>
+<g>
+	<rect x="23.5" y="1337.5" class="st1" width="75.2" height="46.8"/>
+</g>
+<g>
+	<rect x="427.9" y="1337.5" class="st2" width="75.2" height="46.8"/>
+</g>
+<text transform="matrix(1 0 0 1 517.0446 1375.6145)" class="st3 st4">Fixed time slots</text>
+<text transform="matrix(1 0 0 1 116.892 1375.6146)" class="st3 st4">Suggested time slots</text>
 </svg>
