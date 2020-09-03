@@ -20,11 +20,64 @@ introduction: In this module, the self-study material focus on Prototyping and t
 
 TODO full self-study
 
+# Connected Products
 
+In this course, we refer to connected products as any physical entities with the ability to send or receive information through the Internet, in a direct way. It is a touchpoint between the physical and the digital world.
+
+The term 'Thing' is commonly used to encapsulate the technologies 
+
+Multipurpose computer => examples...
+Specialised embedded devices => examples...
+Connected sensors => examples...
+Passively trackable object => examples...
+
+[Designing Connected Products](https://www.oreilly.com/library/view/designing-connected-products/9781449372682/)
+
+Here we will focus on the middle group, forming the bulk of connected products
+
+Network, the connectivity part
+
+
+Opportunities
+interactions
+data
+intelligence
+
+
+Challenges
+complexity
+dynamic
+inter-dependence
+
+
+# Prototyping
+
+What is different about prototypes of connected products?
+
+* hardware / software mix
+* relying on digital technologies
+* distributed, code running in many places
+* network
+* the senses and 
+
+
+* Feasibility prototypes
+* User Prototypes
+* Live-Data Prototypes
+* Hybrid Prototypes
+
+* Testing techniques
+
+* What do we mean by prototype
+* What for?
+
+# Documenting
+
+commenting versus documenting
 
 # Internet of Things' Technology Stack
 
-<iframe width="560" height="400" src="https://www.youtube.com/embed/videoseries?list=PL3sV9hKiYEP-MVdxCXYfl7vei77xdbJo6" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="853" height="480" src="https://www.youtube-nocookie.com/embed/videoseries?list=PL3sV9hKiYEP-MVdxCXYfl7vei77xdbJo6" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 # Quiz
