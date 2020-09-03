@@ -8,6 +8,9 @@ self-study-of: id5415-1
 tags:
 - prototyping
 - IoT
+- IoT stack
+- connected product
+- thing
 introduction: In this module, the self-study material focus on Prototyping and the Internet of Things' technology stack. We explore the purpose of a functional prototype, in close connection to feasibility testing. Then, we look at connected products, their main characteristics and why they often require a (partially) functional prototype. Finally, we introduce the concept of the Internet of Things (IoT), the technology backbone of connected products.
 ---
 
@@ -26,30 +29,28 @@ TODO full self-study
 
 In this course, we refer to connected products as any physical entities with the ability to send or receive information through the Internet, in a direct way. It is a touchpoint between the physical and the digital world.
 
-The term 'Thing' is commonly used to encapsulate the technology enabling physical entities to have a digital manifestation. Clair Rowland distinguishes 4 types of Thing [1]:
+The term 'Thing' is commonly used to encapsulate the technology enabling physical entities to have a digital manifestation. Clair Rowland distinguishes 4 types of Things:
 
-Multipurpose computer => examples...
-Specialised embedded devices => examples...
-Connected sensors => examples...
-Passively trackable object => examples...
+* Multipurpose computer such as laptop 
+* Specialised embedded devices => examples...
+* Connected sensors => examples...
+* Passively trackable object => examples...
 
 
 Network, the connectivity part
 
-
-# Opportunities
+## Opportunities
 
 interactions
 data
 intelligence
 
 
-# Challenges
+## Challenges
 complexity
 dynamic
 inter-dependence
 
-[1]: [Designing Connected Products](https://www.oreilly.com/library/view/designing-connected-products/9781449372682/) p.30
 
 
 What is different about prototypes of connected products?
@@ -71,6 +72,11 @@ What is different about prototypes of connected products?
 * What do we mean by prototype
 * What for?
 
+
+
+## References
+
+1. [Designing Connected Products](https://www.oreilly.com/library/view/designing-connected-products/9781449372682/) UX for the Consumer Internet of Things. By Clair Rowland, Elizabeth Goodman, Martin Charlier, Ann Light and Alfred Lui.
 
 # Internet of Things' Technology Stack
 

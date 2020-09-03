@@ -10,6 +10,14 @@ prog_environment: Raspberry Pi
 design: Architecture
 code_management: Logs
 computational_concepts: Data
+tags:
+- microprocessor
+- microcontroller
+- IDE
+- CLI
+- SSH
+- Bucket
+- Setup
 ---
 
 We have prepared 5 steps for this assignment (each again divided into specific tasks you have to perform).
