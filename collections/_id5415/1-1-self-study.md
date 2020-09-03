@@ -79,7 +79,6 @@ commenting versus documenting
 
 {% include youtube_playlist.html url="https://www.youtube-nocookie.com/embed/videoseries?list=PL3sV9hKiYEP-MVdxCXYfl7vei77xdbJo6" %}
 
-{% include youtube_playlist.html url="https://www.youtube-nocookie.com/embed/videoseries?list=PL3sV9hKiYEP-MVdxCXYfl7vei77xdbJo6" %}
 
 # Quiz
 
