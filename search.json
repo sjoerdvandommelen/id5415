@@ -7,7 +7,7 @@
       "tags"     : "{{ coursePage.tags | array_to_sentence_string }}",
       "categories"     : "{{ coursePage.main-class }}",
       "url"      : "{{ site.baseurl }}{{ coursePage.url }}"
-    },
+    } {% unless forloop.last %},{% endunless %}
   {% endfor %}
    
 ]
