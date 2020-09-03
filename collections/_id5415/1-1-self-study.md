@@ -77,8 +77,7 @@ commenting versus documenting
 
 # Internet of Things' Technology Stack
 
-<iframe width="853" height="480" src="https://www.youtube-nocookie.com/embed/videoseries?list=PL3sV9hKiYEP-MVdxCXYfl7vei77xdbJo6" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+{% include youtube_playlist.html url="https://www.youtube-nocookie.com/embed/videoseries?list=PL3sV9hKiYEP-MVdxCXYfl7vei77xdbJo6"}
 
 # Quiz
 
