@@ -20,21 +20,11 @@ introduction: In this module, the self-study material focus on Prototyping and t
 
 TODO full self-study
 
-# Functional Prototyping
 
-* What do we mean by prototype
-* What for?
-
-# Connected Products
-
-* What's a connected product
-* Different architectures
 
 # Internet of Things' Technology Stack
 
-<iframe width="560" height="400" src="https://www.youtube.com/embed/kSxxUuC8njY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-# Documenting
+<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PL3sV9hKiYEP-MVdxCXYfl7vei77xdbJo6" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 # Quiz
