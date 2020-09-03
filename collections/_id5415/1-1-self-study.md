@@ -24,16 +24,15 @@ TODO full self-study
 
 In this course, we refer to connected products as any physical entities with the ability to send or receive information through the Internet, in a direct way. It is a touchpoint between the physical and the digital world.
 
-The term 'Thing' is commonly used to encapsulate the technologies 
+The term 'Thing' is commonly used to encapsulate the technologies  
+
+Clair Rowland distinguishes 4 type of them[^1]:
 
 Multipurpose computer => examples...
 Specialised embedded devices => examples...
 Connected sensors => examples...
 Passively trackable object => examples...
 
-[Designing Connected Products](https://www.oreilly.com/library/view/designing-connected-products/9781449372682/)
-
-Here we will focus on the middle group, forming the bulk of connected products
 
 Network, the connectivity part
 
@@ -49,6 +48,7 @@ complexity
 dynamic
 inter-dependence
 
+[^1]: [Designing Connected Products](https://www.oreilly.com/library/view/designing-connected-products/9781449372682/)
 
 # Prototyping
 
