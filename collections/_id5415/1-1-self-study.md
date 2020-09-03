@@ -20,13 +20,13 @@ introduction: In this module, the self-study material focus on Prototyping and t
 
 TODO full self-study
 
-# Connected Products
+# Prototyping Connected Products
+
+<span class="mdi mdi-text-box-outline"></span> Reading (30 minutes)
 
 In this course, we refer to connected products as any physical entities with the ability to send or receive information through the Internet, in a direct way. It is a touchpoint between the physical and the digital world.
 
-The term 'Thing' is commonly used to encapsulate the technologies  
-
-Clair Rowland distinguishes 4 type of them[^1]:
+The term 'Thing' is commonly used to encapsulate the technology enabling physical entities to have a digital manifestation. Clair Rowland distinguishes 4 types of Thing [1]:
 
 Multipurpose computer => examples...
 Specialised embedded devices => examples...
@@ -37,21 +37,20 @@ Passively trackable object => examples...
 Network, the connectivity part
 
 
+# Opportunities
 
-Opportunities
 interactions
 data
 intelligence
 
 
-Challenges
+# Challenges
 complexity
 dynamic
 inter-dependence
 
-[^1]: [Designing Connected Products](https://www.oreilly.com/library/view/designing-connected-products/9781449372682/)
+[1]: [Designing Connected Products](https://www.oreilly.com/library/view/designing-connected-products/9781449372682/) p.30
 
-# Prototyping
 
 What is different about prototypes of connected products?
 
@@ -75,16 +74,18 @@ What is different about prototypes of connected products?
 
 # Internet of Things' Technology Stack
 
-<span class="mdi mdi-pencil-ruler"></span> Video series (30 minutes)
+<span class="mdi mdi-video"></span> Video series (30 minutes)
 
 We unpacked the particular prototyping needs for the design and development of connected products. These needs come from the Internet of Things, or the IoT, which is the technology behind product-service systems. Like an iceberg, the physical ‘Things’ are the tip, visible above water while most of the technology and complexity is hidden, immersed underwater.
 
-In the following series of seven small videos, we shed light on this digital technology, mapping its literacy through a layered framework so-called ‘stack’. We explore what is the Internet of Things, extracting the key roles of designers in the development of product-service systems.
+In the following series of seven small videos, we shed light on this digital technology, mapping its literacy through a layered framework so-called 'stack'. We explore what is the Internet of Things, extracting the key roles of designers in the development of product-service systems.
 
 [Video Series on the Internet of Things' Technology Stack](https://www.youtube.com/playlist?list=PL3sV9hKiYEP-MVdxCXYfl7vei77xdbJo6)
 
 
-# Quiz
+# Check your Understanding
+
+<span class="mdi mdi-head-question"></span> Quiz (15 minutes)
 
 Check your understanding with the following quiz! It is anonymous and you can try as many times as you want!
 
