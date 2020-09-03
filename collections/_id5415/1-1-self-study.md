@@ -77,6 +77,10 @@ commenting versus documenting
 
 # Internet of Things' Technology Stack
 
+{% include youtube_playlist.html url="https://www.youtube-nocookie.com/embed/videoseries?list=PL3sV9hKiYEP-MVdxCXYfl7vei77xdbJo6" %}
+
+{% include youtube_playlist.html url="https://www.youtube-nocookie.com/embed/videoseries?list=PL3sV9hKiYEP-MVdxCXYfl7vei77xdbJo6" %}
+
 # Quiz
 
 Check your understanding with the following quiz! It is anonymous and you can try as many times as you want!
