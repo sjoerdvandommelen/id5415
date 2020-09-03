@@ -37,6 +37,7 @@ Passively trackable object => examples...
 Network, the connectivity part
 
 
+
 Opportunities
 interactions
 data
@@ -71,13 +72,16 @@ What is different about prototypes of connected products?
 * What do we mean by prototype
 * What for?
 
-# Documenting
-
-commenting versus documenting
 
 # Internet of Things' Technology Stack
 
-{% include youtube_playlist.html url="https://www.youtube-nocookie.com/embed/videoseries?list=PL3sV9hKiYEP-MVdxCXYfl7vei77xdbJo6" %}
+<span class="mdi mdi-pencil-ruler"></span> Video series (30 minutes)
+
+We unpacked the particular prototyping needs for the design and development of connected products. These needs come from the Internet of Things, or the IoT, which is the technology behind product-service systems. Like an iceberg, the physical ‘Things’ are the tip, visible above water while most of the technology and complexity is hidden, immersed underwater.
+
+In the following series of seven small videos, we shed light on this digital technology, mapping its literacy through a layered framework so-called ‘stack’. We explore what is the Internet of Things, extracting the key roles of designers in the development of product-service systems.
+
+[Video Series on the Internet of Things' Technology Stack](https://www.youtube.com/playlist?list=PL3sV9hKiYEP-MVdxCXYfl7vei77xdbJo6)
 
 
 # Quiz
